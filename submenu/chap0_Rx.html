@@ -1,0 +1,182 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+			<!-- ceci permet de gerer la partie RESPONSIVE-->
+		<meta name="viewport" content="width-device-width, initial-scale=1">
+			<!-- ceci permet de gerer la partie REFERENCEMENT-->
+		<meta name="description" content="Bienvenue sur le site de Yero Bhoye SOW">
+		<link rel="stylesheet" href="menu.css">
+		<link rel="stylesheet" href="contenu.css">
+		<title>Chapitre 0</title>
+	</head>
+	
+	<body>
+				<!-- ceci est l'entete de ma page-->
+		<header>
+			<div class="div-responsive">
+				<a href="#"><img src="AETE.png" alt="logo-entete" class="imglogoEntete-responsive"></a>
+				<h2 class="txt-entete-responsive"> Apprendre-et-Enseigner </h2>
+			</div>
+			<div>
+				<a href="#"><img src="logo-entete.jpg" alt="logo-entete" class="imglogoEntete"></a>
+				<h3 class="txt-joubert"> « Enseigner, c’est apprendre deux fois. » 
+				<br><div class="txt-droite"> J. Joubert </div></h3>
+			</div>
+		</header>
+				<!-- ceci est le MENU DE NAVIGATION -->
+		<nav>
+			<!-- ceci permet de gerer la partie RESPONSIVE-->
+			<label for="menu-mobile" class="menu-mobile">Afficher le Menu</label>
+			<input type="checkbox" id="menu-mobile" role="button">
+			<ul>
+				<li class="menu-cours"><a href="../index.html">Accueil</a></li>
+				<li class="menu-cours"><a href="#">Cours</a>
+					<ul   class="submenu">
+						<li><a href="cours-article.html">Articles</a></li>
+						<li><a href="cours-video.html">Cours vidéo</a></li>
+						<li><a href="cours-audio.html">Cours audio</a></li>
+					</ul>
+				</li>
+				<li class="menu-ressources"><a href="#">Réssources</a>
+					<ul  class="submenu">
+						<li><a href="cours-pdf.html">Cours en pdf</a></li>
+						<li><a href="exercice-pdf.html">Exercices en pdf</a></li>
+						<li><a href="divers.html">Divers</a></li>
+					</ul>
+				</li>
+				<li class="menu-livre"><a href="#">Livres</a>
+					<ul  class="submenu">
+						<li><a href="livre-audio.html">Livre audio</a></li>
+						<li><a href="livre-pdf.html">Livres en pdf</a></li>
+						<li><a href="autre.html">Autres</a></li>
+					</ul>
+				</li>
+				<li class="menu-devperso"><a href="#">Développement personnel</a>
+					<ul class="submenu">
+						<li><a href="devperso-livre-audio.html">Livre audio</a></li>
+						<li><a href="carte-mentale.html">Carte mentale</a></li>
+						<li><a href="devperso-trucs-astuces.html">Trucs et astuces</a></li>
+					</ul>
+				</li>
+				<li class="menu-qui-sje"><a href="#">Qui suis-je</a>
+					<ul class="submenu">
+						<li><a href="mes-realisations.html">Mes réalisations</a></li>
+						<li><a href="mon-cv.html">Mon CV</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		
+				<!-- ceci est Le CONTENU DE LA PAGE-->
+		<section>
+				<!-- NB les contenneurs but = avoir une hauteur dynamique 
+				inverser les conteneur ie contenneur d/c/g 
+				Pour que le cont. g soit en premiere position sur navigateur
+				-->
+			<div class="contenneur-d">
+			
+				<div class="contenneur-c">
+					<div class="contenneur-g">
+						<div class="col-c">
+						
+							<div class="div-txt-c">
+								<h1>10 Comments pour comprendre les concepts de bases en Base de Données</h1>
+								<hr>
+								<dl>
+									<dt>
+										<ol>
+											<h2><li>Comment peut-on définir un système ?</li></h2>
+										<dd>
+											Un système, est un tout constitué d'éléments (Hommes, machines, méthodes, règles...) unis par des rélations. Les 
+											élements et les relations sont munis de propriétés.
+											Exemple: une "Entreprise" constitue un système
+										</dd>
+
+											<h2><li>Comment les éléments interagissent entre eux dans le système ?</li></h2>
+										<dd>
+											Les éléments interagissent entre eux grâce à un processus. Un processus est un ensemble d'opérations exécuté 
+											globalement. Lors du processus, des éléments appelés "entrées" sont transformés en d'autres éléments appelés "sorties".
+											<br> Exemples: <br>
+											1) Pièces détachées ----> Chaine de montage ----> Voitures
+											<br>
+											2) Bacheliers ----> Ecole de Formation ----> Diplômes (BTS)
+	
+										</dd>
+
+											<h2><li>Comment peut-on décrire le système ?</li></h2>
+										<dd>
+											Décrire le système, c'est de déterminer ses éléments, ses relations, son actiivité
+											et son organisation.
+										</dd>
+
+
+
+											<h2><li>Comment peut-on définir un élément ?</li></h2>
+										<dd>
+											Un élément, peut être un objet ou une chose pourvu d'une existence propre.<br>
+											Exemples: dans le système "Entreprise", l'élément peut être: "Employés", "Services", "Articles", "Emplacement de stockage",...
+											NB: <br>
+											Selon l'auteur, on utilise généralement les termes "Objet"; "Entité" ou "Individu" pour designer
+											un élément.<br>
+											L'Entité est munis de propriétés. Une propriété est ce qui caractérise (ou décrit) l'Entité.
+											Exemples de propriétés: "Matricule_Employé", "Nom_Employé", "Reférence" de l'Articles, "designation",...
+										</dd>
+
+											<h2><li>Comment peut-on définir une relation ?</li></h2>
+										<dd>
+											Une relation est ce qui lit les élements (ou objets/Entités/Individus) entre eux dans un système d'information.<br>
+											Exemples: dans le système "Entreprise", La relation peut être: <br>
+											1) "est rattaché", qui relie les Entités "Employés" et "Services"<br>
+											2) "est stocké", qui relie les Entités "Articles" et "Emplacement de stockage"<br>
+											
+											NB: <br>
+											Selon l'auteur, on utilise généralement le terme "Association" pour designer une relation
+											<br>
+											Comme l'Entité, la relation peut avoir des propriétés. Exemples: "date d'entrée dans le service", "Quantité stockée",...
+
+											<br>
+
+										</dd>
+											<h2><li>Comment peut-on définir une cardinalité ?</li></h2>
+										<dd>
+											Une 
+
+										</dd>	
+
+										<h2><li>Comment peut-on définir une occurence ?</li></h2>
+										<dd>
+											Une 
+
+										</dd>										
+
+											<h2><li>Comment peut-on identifier les composants d'un système ?</li></h2>
+										<dd>
+											Une 
+
+										</dd>	
+
+										</ol>
+										
+
+									</dt>
+								</dl>
+							</div>
+						</div>
+						<div class="col-d">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</section>
+				<!-- ceci est le PIED DE PAGE-->
+		<footer>
+			<div class="pied">
+				<p> Copyright 2021 Yéro Bhoye Sow- Toute réproduction interdite. </p>
+			</div>
+		</footer>
+	</body>
+</html>

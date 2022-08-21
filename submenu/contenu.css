@@ -1,0 +1,16 @@
+/*LES COLONNES */
+.div-txt-g{
+	padding:5% 8% 5% 8%;
+	
+}
+
+.div-txt-c, .div-txt-g{
+	line-height: 30px;
+	
+	
+}
+
+.div-txt-c{
+	padding:5% 8% 5% 8%;
+	text-align: justify;
+}

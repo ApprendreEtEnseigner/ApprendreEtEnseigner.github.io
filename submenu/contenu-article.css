@@ -1,0 +1,104 @@
+.col-c{
+	border-top: 10px solid #2F5D62;
+	background-color: #EBECEC;
+}
+
+#col-c2{
+	border-top: 10px solid #5E8B7E;
+	background-color: #EBECEC;
+}
+
+#col-c3{
+	border-top: 10px solid #A7C4BC;
+	background-color: #EBECEC;
+}
+
+#col-c4{
+	border-top: 10px solid #2F5D62;
+	background-color: #EBECEC;
+}
+
+#col-c5{
+	border-top: 10px solid #5E8B7E;
+	background-color: #EBECEC;
+}
+
+#col-c6{
+	border-top: 10px solid #A7C4BC;
+	background-color: #EBECEC;
+}
+
+#col-c7{
+	border-top: 10px solid #2F5D62;
+	background-color: #EBECEC;
+}
+
+#col-c8{
+	border-top: 10px solid #5E8B7E;
+	background-color: #EBECEC;
+}
+
+#col-c9{
+	border-top: 10px solid #A7C4BC;
+	background-color: #EBECEC;
+}
+
+#col-c10{
+	border-top: 10px solid #2F5D62;
+	background-color: #EBECEC;
+}
+
+#col-c11{
+	border-top: 10px solid #5E8B7E;
+	background-color: #EBECEC;
+}
+
+#col-c12{
+	border-top: 10px solid #A7C4BC;
+	background-color: #EBECEC;
+}
+
+#col-c13{
+	border-top: 10px solid #2F5D62;
+	background-color: #EBECEC;
+}
+
+.col-c h2{
+	text-align: center
+}
+
+.col-c a{
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.col-c h2{
+	text-align: center
+}
+
+.col-c a{
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.chap-left{
+	line-height: 30px;
+	padding: 5px 5px;
+	margin: 4% 8% 4% 8%; 
+	border: 1px solid red;
+}
+
+.Centrer-titre{
+	text-align: center;
+}
+.Centrer{
+	width: 50%;
+	margin: 0px auto;
+	border: solid blue 2px;
+}
+
+.gerer-video{
+	width: 100%;
+}
+
+
