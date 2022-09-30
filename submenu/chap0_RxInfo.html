@@ -80,74 +80,160 @@
 					<div class="contenneur-g">
 						<div class="col-c">
 						
-							<div class="div-txt-c">
-								<h1>10 COMMENTS POUR COMPRENDRE LES CONCEPTS DE BASE EN RESEAU INFORMATIQUE</h1>
+							<div class="div-txt-c" id="div-txt-responsive-article">
+								<P class="MJ_Contenu">Mis à jour le 03/09/2022</p>
+								<h1>Le Réseau, explication par l'exemple</h1>
 								<hr>
-								<dl>
-									<dt>
-										<ol>
-											<h2><li>Comment peut-on définir le terme: Réseau ?</li></h2>
-										<dd>
-											Un Réseau, est un ensemble d'entités en communication.<br>
-											Exemple: un groupe de personne qui parle ensemble.
-										</dd>
+								<h2>1. C’est quoi un réseau ? Ça sert à quoi ?</h2>
+								<p>
+									Avant toute chose, il est indispensable de répondre à la question suivante: qu’est-ce qu’un
+réseau? On pourrait définir le mot «réseau» en une phrase: un réseau est un groupe d’entités en communication.
+								</p>
+								<P class="my_question">
+									C’est quoi une entité?
+								</P>
+								<p >
+									Une entité peut désigner une «chose» parmi d’autres. Par exemple, une personne dans un groupe
+de personnes est une entité de ce groupe. Pour rester dans cet exemple, on parle de réseau quand deux ou plusieurs personnes parlent ensemble.
+								</p>
 
-											<h2><li>Comment peut-on définir le terme: Réseau informatique ?</li></h2>
-										<dd>
-											Le Réseau informatique, est l'ensemble des équipements informatiques (matériels et logiciels)
-											interconnectés les uns avec les autres, dans le but de partager les ressources (données).
-											
-	
-										</dd>
+								<P class="my_question">
+									C’est tout, un réseau c’est juste quand on parle ensemble?	
+								</P>
 
-											<h2><li>Comment peut-on citer les avantages du Réseau informatique ?</li></h2>
-										<dd>
-											L'avantage principal du Réseau informatique, est l'échange d'informations. Donc il facilite la communication, grâce à 
-											divers services: appel, SMS, mail,...
-											<br>Le réseau informatique permet entre autres:
-											<br>- Le partage de ressources (imprimantes, programmes, données,...);
-											<br>- La fiabilité
-											<br>- La réduction des coûts
-										</dd>
+								<p>
+									Oui, mais n’oubliez pas que «parlent ensemble» c’est aussi «s’échangent des informations»!
+Donc, en gros, un réseau consiste en l’échange d’informations, et il existe (dans la vie
+courante) plusieurs moyens d’échanges d’informations, sans faire intervenir la technologie
+(Internet, téléphone, etc.). Si on veut vous donner un livre, on prend le livre, et on vous tend la
+main, puis vous prenez le livre. Vous l’aurez compris, il existe plusieurs manières de partager
+des données entre les humains, sans les technologies.
+								</p>
+
+								<p>
+									Ce qui est intéressant, c’est que je peux envoyer (transmettre) un livre à André, en passant par Pierre.
+								</p>
+
+								<p>
+									Eh Pierre, si tu vois André, passe-lui le livre, et qu’il te le remette quand il aura fini de le lire.
+									<br>Ce qui se passe dans ce cas est:
+
+									<ul>
+										<li>— Je donne le livre à Pierre</li>
+										<li>— Pierre trouve André et le lui donne</li>
+										<li>— André a fini, il rend le livre à Pierre</li>
+										<li>— Pierre vient me rendre le livre</li>
+									</ul>
+								</p>
+
+								<p>
+									Nous allons supposer dans ce cas présent qu’André et moi ne nous voyons pas, donc, Pierre est
+dans ce cas un intermédiaire. Justement, le principe d’intermédiaire est un des fondements des
+réseaux informatiques. Vous allez rapidement vous en rendre compte.
+								</p>
+
+								<P class="my_exclammation">
+									Pour communiquer, les 2 entités doivent parler la même langue. Ou alors, l’intermédiaire
+doit parler la langue de chacun de ses interlocuteurs. En réseau informatique, c’est pareil,
+sauf qu’on ne parle pas de langue mais de protocole.
+								</P>
+
+								<p>
+									Si vous avez compris ce qu’est un réseau avec des humains, vous avez tout compris. Un réseau
+informatique est exactement pareil, sauf qu’il faut remplacer les humains par des machines. Hé
+oui.
+								</p>
+
+								<P class="my_question">
+									Mais… mais… et les câbles, les adresses je-ne-sais-pas-quoi…? On en fait quoi ?
+								</P>
+
+								<p>
+									On ne va pas se compliquer l’existence tout de suite hein. Pour l’instant, on reste dans
+l’approche globale du réseau; les liaisons et la configuration, on verra plus tard. Vous ne voulez
+quand même pas que l’on monte un réseau d’entreprise dès le premier chapitre, si?
+								</p>
+
+								<P class="my_question">
+									Concrètement, un réseau informatique, ça sert à quoi ?
+								</P>
+
+								<p>
+									Eh bien, sans réseau informatique, vous ne seriez pas en train de lire ce tuto, déjà.
+De manière globale, un réseau informatique permet l’échange d’informations à distance. On peut
+trouver plein d’applications à un réseau: discuter avec une personne, s’échanger des documents,
+jouer en ligne…
+								</p>
+
+								<p class="my_exclammation_blu">
+									Retenez bien le terme d’application de réseau! Une application est l’utilisation (voire
+l’exploitation) d’une ressource pour en faire quelque chose de concret. Ici, on exploite
+un réseau informatique pour discuter par exemple. En mécanique, on peut exploiter du
+matériel pour faire une voiture: c’est une application de la mécanique (le rédacteur ayant
+écrit ça n’y connait absolument rien en mécanique, si quelqu’un veut refaire l’exemple
+qu’il n’hésite pas ).
+								</p>
+
+								<h2>2. Les 2 réseaux mondiaux incontournables</h2>
+								<p>
+									Dans un tutoriel sur les réseaux informatiques, on ne pouvait pas manquer de parler d’Internet,
+bien évidemment. Mais à l’origine, pour accéder à Internet, on passe par une ligne téléphonique.
+C’est pourquoi, dans la catégorie réseau informatique, on distingue deux types de réseaux:<BR>
+— Le réseau Internet;<br>
+— Le réseau Télécom.
+								</p>
+								<h2>
+									2.1 Le réseau Internet
+								</h2>
+								<p>
+									Internet désigne le réseau public et mondial permettant l’échange de données. Quand un
+ordinateur est connecté à ce réseau, on dit qu’il a accès à Internet. On confond parfois ce réseau
+avec le World Wide Web, alors qu’il y a une grande différence entre ces deux notions.
+								</p>
+
+								<h2>2.1.1 Le World Wide Web</h2>
+								<P>
+									Le World Wide Web, ou Web pour faire plus court, est l’ensemble des sites Web (appelés par
+abus de langage «sites Internet») présents sur le réseau Internet. La toile, comme on dit parfois
+en français, c’est donc l’ensemble de tous les sites Web que nous pouvons visiter grâce à notre
+navigateur Web (Firefox, Opera, …).
+								</P>
+
+								<h2>2.1.2 Internet</h2>
+								<p>
+									Internet, par contre, c’est l’ensemble des nœuds (connexions, câbles, etc.) entre les machines qui
+nous donnent accès au web. Internet est donc l’ensemble des réseaux qui nous permettent de
+partager des données, notamment sur la toile. Donc, quand une personne vous demande si vous
+avez Internet, elle veut savoir si votre ordinateur a accès à Internet. Par ailleurs c’est encore un
+abus de langage que de dire que l’on a Internet: ce réseau gigantesque n’appartenant à personne,
+on ne peut qu’avoir accès à Internet.
+								</p>
+
+								<h2> 2.2 Le réseau Télécom</h2>
+								<p>
+									Étymologiquement, le mot télécommunication (abrégé télécom) signifie communication à distance.
+Le réseau Télécom a donc pour but d’assurer la communication à distance, par la transmission
+électrique de la voix. Ce réseau est similaire au réseau Internet en plusieurs points, comme
+l’identité unique, les «sous-réseaux» formés par les délimitations territoriales… Nous ne pouvons
+pas expliquer ça dès le début, mais soyez patient·e: vous comprendrez l’analogie dans peu de
+temps.
+								</p>
+								<hr>
+								<p>
+									On espère que ce chapitre ne vous a pas ennuyé, car il est primordial si l’on veut avancer dans le
+cours. Nous avons abordé le fonctionnement de la transmission des données, en nous inspirant de
+la vie courante. L’exemple n’était certes pas original, mais il est tout de même très pratique pour
+comprendre les adresses, les protocoles, etc. Vous n’allez pas tarder à vous en rendre compte!
+								</p>
+								<p>
+									Maintenant que nous avons défini ce qu’est un réseau, nous allons pouvoir étudier de quoi c’est
+composé.
+								</p><br><br>
+								<hr>
+								<p>source :<a href="zestedesavoir.com">zestedesavoir.com</a></p>
 
 
 
-											<h2><li>Comment peut-on citer les inconvénients du Réseau informatique ?</li></h2>
-										<dd>
-											L'inconvénient principal du réseau informatique, est le problème de sécurité. Il ya le piratage (hacking), craking, virus,...
-										</dd>
-
-											<h2><li>Comment peut-on classer les réseaux informatiques ?</li></h2>
-										<dd>
-											Une bonne classification necessite un ou plusieurs critères de classification. Ainsi, on distingue trois principaux critères:<br>
-											a) Selon la distance, on a:<br>
-											- les réseaux PAN (Personnal Area Network), réseau personne en français, est un réseau dont la portée est très petite. C'est par
-											exemple, l'interconnection entre un ordinateur et un ou plusieurs peripheriques (clé USB, Imprimante, Box...)<BR>
-											- les réseaux LAN (Local Area Network), réseau Local en français, est un réseau à l'échelle d'un batiment.<BR>
-											- les réseaux MAN (Metropolitan Area Network), représente l'association de plusieurs réseaux LAN. C'est le réseau à l'échelle d'une ville. <br>
-											- les réseaux WAN (Wide Area Network), réseau "étendu" en français, est l'association de plusieurs réseaux MAN. C'est le réseau à l'échelle international.<br>
-											b) Selon la structure ou la topologie, on a:<br>
-											- le réseau en Bus;<br>
-											- le réseau en anneau;<br>
-											- le réseau en étoile;<br>
-											- le réseau maillé;<br>
-											- le réseau hybride.<br>
-											c) Selon le mode d'administration, on a:<br>
-											- le réseau poste à poste ou égal à égal ou encore Peer to Peer;<br>
-											- le réseau client serveur.<br>
-											
-											
-
-										</dd>
-											
-
-										
-
-										</ol>
-										
-
-									</dt>
-								</dl>
 							</div>
 						</div>
 						<div class="col-d">
