@@ -82,71 +82,126 @@
 						<div class="col-c">
 						
 							<div class="div-txt-c" id="div-txt-responsive-article">
-								<h1>10 COMMENTS POUR COMPRENDRE LES CONCEPTS DE BASE EN BASE DE DONNEES</h1>
+								<h1>Du système au méthode d'analyse et de conception.</h1>
 								<hr>
-								<dl>
-									<dt>
-										<ol>
-											<h2><li>Comment peut-on définir un système ?</li></h2>
-										<dd>
-											Un système, est un tout constitué d'éléments (Hommes, machines, méthodes, règles...) unis par des rélations. Les 
-											élements et les relations sont munis de propriétés.
-											Exemple: une "Entreprise" constitue un système
-										</dd>
+								<h2>1. C’est quoi un système ?</h2>
 
-											<h2><li>Comment les éléments interagissent entre eux dans le système ?</li></h2>
-										<dd>
-											Les éléments interagissent entre eux grâce à un processus. Un processus est un ensemble d'opérations exécuté 
-											globalement. Lors du processus, des éléments appelés "entrées" sont transformés en d'autres éléments appelés "sorties".
-											<br> Exemples: <br>
-											1) Pièces détachées ----> Chaine de montage ----> Voitures
-											<br>
-											2) Bacheliers ----> Ecole de Formation ----> Diplômes (BTS)
-	
-										</dd>
+								<p>
+									Un  système est  un  ensemble  d’éléments  en  interaction  dynamique,  organisés  en  fonction  d’un but donnée.
+									
+								</p>
 
-											<h2><li>Comment peut-on décrire le système ?</li></h2>
-										<dd>
-											Décrire le système, c'est de déterminer ses éléments, ses relations, son actiivité
-											et son organisation.
-										</dd>
+								<P>
+									Plus explicitement, un système est un ensemble d’éléments matériels ou immatériels (hommes, 
+machine,  méthodes,  règles,  etc...)  en  interaction  et  transformant,  grâce  à  un  processus,  des 
+éléments (les entrées) en d’autres éléments (le sorties).<br>
+
+								</P>
 
 
+								<P class="my_Exemple">
+									Exemple: une chaudière transforme par combustion ducharbon en chaleur.
+								</P>
 
-											<h2><li>Comment peut-on définir un élément ou une entité ?</li></h2>
-										<dd>
-											Un élément, peut être un objet ou une chose pourvu d'une existence propre.<br>
-											Exemples: dans le système "Entreprise", l'élément peut être: "Employés", "Services", "Articles", "Emplacement de stockage",...
-											NB: <br>
-											Selon l'auteur, on utilise généralement les termes "Objet"; "Entité" ou "Individu" pour designer
-											un élément.<br>
-											L'Entité est munis de propriétés. Une propriété est ce qui caractérise (ou décrit) l'Entité.
-											Exemples de propriétés: "Matricule_Employé", "Nom_Employé", "Reférence" de l'Articles, "designation",...
+								<h2>2. Quels sont les constituants (ou composants) d'un système ?</h2>
+								<p>
+									Tout  système  constitué  par  des  organisations (entreprises,  sous-ensembles  d’entreprises,  etc. 
+..) et fonctionnant en vue de la réalisation de certains objectifs est contrôlé par un autre système 
+appelé: <br> 
+1) système de pilotage: qui dirige l’entreprise et maintient la cap sur les objectifs choisis. <br>
+Exemple: directeur, chef de service, contre maître responsable d’une unité de production.
+								</p>
+
+								<P class="my_Exemple">
+									Exemple:  on  obtiendra  plus  ou  moins  de  chaleur  selon  les  réglages  que  l’on  effectue  sur  la 
+chaudière,  ou  une  durée  de  chauffage  plus  ou  moins  longue  selon  la  qualité  de  charbon. 
+L’opérateur  qui  effectue  les  réglages  et  qui  contrôle  le  flux  de  charbon  en  entrée  constitue  un 
+système  de  pilotage  qui,  par  ses  commandes  au  système  physique  (à  la  chaudière),  cherche  à 
+satisfaire un objectif (tel niveau de chaleur). 
+								</P>
+
+								<p>
+									Le système de pilotage précède quand à lui à la régulation et au contrôle d’un deuxième système 
+de  l’entreprise  ou  de  l’organisme,  appelé:  
+<br> 2) système  opérant: qui  transforme  un  flux  physique 
+d’entrée en un flux de sortie. 
+								</p>
+
+								<p class="my_exclammation">
+									Le  système  de  pilotage  agit  sur  le  système  opérant  en  décidant  du  comportement  de  ce  dernier 
+en fonction des objectifs fixés. 
+								</p>
+								<img src="images_BD/flux_entree_sortie.JPG" alt="image illustrant les deux types de système ci-dessus"/><br>
+								<caption>
+									flux physique d’entrée: matière premières, flux financiers,...<br>
+									flux physique de sortie: produits finis, flux financiers, ... 
+								</caption>
+
+								<p>
+									Enfin, les informations entre le système de pilotage et le système opérant sont véhiculées par un 
+troisième système, appelé: 
+<br> 3) système d’information: qui représente des « méthodes et moyens 
+recueillant, contrôlant, mémorisant et distribuant les informations nécessaires à l’exercice de 
+l’activité de tous les points de l’organisation ». 
+								</p>
+
+								<h2>3. Quels sont les fonctions d'un système d'information ?</h2>
+								<p>
+									Le système d’information réalise alors quatre fonctions essentielles: 
+									<ul>
+										<li>
+											<span class="text_bold">collecter </span>les informations provenant des autres éléments du système ou de l’environnement 
+externe au système; ====>  <span class="text_bold">fonction dynamique </span>
+										</li>
+										<li>
+											<span class="text_bold">Mémoriser </span> les données manipulées par le système, ====> <span class="text_bold">fonction statique </span> 
+										</li>
+										<li>
+											<span class="text_bold">Traiter </span>  les données stockées; ====> <span class="text_bold">fonction statique </span>  
+										</li>
+										<li>
+											<span class="text_bold">Transmettre </span> des informations vers les autres composants du système ainsi que vers 
+l’environnement externe au système.  ====> <span class="text_bold">fonction dynamique </span>   
+										</li>
+									</ul>
+								</p>
+
+								<p class="my_exclammation">
+									On a alors trois fonctions dynamiques et une fonction statique. Le système d’information est donc dynamique.
+								</p>
+
+								<h3>
+									Schéma  récapitulatif  de  l’approche  systémique d’une  entreprise  ou  de  tout autre organisme:
+								</h3>
+								<img src="images_BD/resume_approche_systemique.JPG" alt="image résumant l'approche systémique"/><br>
+								<caption>
+									Représentation schématique des trois composants d'un système.
+								</caption>
+
+								<p>
+									En bref,
+									<ul>
+										<li>
+											<span class="text_bold">Le pilote </span> assigne les objectifs (opérations à réaliser) et contrôle le système,
+										</li>
+										<li>
+											<span class="text_bold">Le système d’informations </span>  enregistre les opérationsà réaliser et le résultat des opérations, 
+										</li>
+										<li>
+											<span class="text_bold">L’opérant </span> effectue  les  opérations:  reçoit  et  émet  les  flux  (échanges  du  système  avec 
+											l’environnement) 
+										</li>
 										
-										</dd>
+									</ul>
+								</p>
 
-											<h2><li>Comment peut-on définir une relation ?</li></h2>
-										<dd>
-											Une relation est ce qui lit les élements (ou objets/Entités/Individus) entre eux dans un système d'information.<br>
-											Exemples: dans le système "Entreprise", La relation peut être: <br>
-											1) "est rattaché", qui relie les Entités "Employés" et "Services"<br>
-											2) "est stocké", qui relie les Entités "Articles" et "Emplacement de stockage"<br>
-											
-											NB: <br>
-											Selon l'auteur, on utilise généralement le terme "Association" pour designer une relation
-											<br>
-											Comme l'Entité, la relation peut avoir des propriétés. Exemples: "date d'entrée dans le service", "Quantité stockée",...
+								<h2>4. C'est quoi une méthode ?</h2>
+								<P>
+									PP
+								</P>
 
-											<br>
+								<h2>5. Quels sont les constituants d'une méthode ?</h2>
 
-										</dd>
-											
-
-										</ol>
-										
-
-									</dt>
-								</dl>
 							</div>
 						</div>
 						<div class="col-d">
