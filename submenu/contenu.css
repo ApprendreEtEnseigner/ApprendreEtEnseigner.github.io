@@ -1,8 +1,9 @@
-/*LES COLONNES */
+/*LES COLONNES 
 .div-txt-g{
 	padding:5% 8% 5% 8%;
 	
 }
+*/
 
 .div-txt-c, .div-txt-g{
 	line-height: 30px;
@@ -10,7 +11,27 @@
 	
 }
 
+.chap-left{
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.836);
+}
+
+.margin-top{
+	margin-top: 0%;
+}
+
+.illustration-left{
+	border: 1px solid royalblue;
+	
+}
+
+.description-right{
+	border: 1px solid black;
+	margin-left: 10px;
+}
+
+/*
 .div-txt-c{
 	padding:5% 8% 5% 8%;
-	text-align: justify;
-}
+	}
+	*/

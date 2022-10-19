@@ -54,6 +54,12 @@ nav input[type=checkbox]:checked ~ ul{
 	
 } 
 
+.txt-joubert{
+	float: right;
+	margin-right: 15px;
+	
+}
+
 /* Lorsque la largeur max est 680px, 
 	afficher le LABEL et le CHECKBOX
 	cacher le menu
