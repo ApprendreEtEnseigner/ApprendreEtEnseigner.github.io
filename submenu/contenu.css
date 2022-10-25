@@ -22,12 +22,15 @@
 
 .illustration-left{
 	border: 1px solid royalblue;
+	width: 250px;
+	height: 180px;
 	
 }
 
 .description-right{
 	border: 1px solid black;
 	margin-left: 10px;
+	height: 180px;
 }
 
 
