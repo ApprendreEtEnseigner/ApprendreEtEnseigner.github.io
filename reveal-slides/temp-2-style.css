@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Roboto&display=swap');
+
+.bloc-content{
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    background: yellowgreen;
+}
+
+.concept h2{
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 1.5em;
+}
+
+.table-parent{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 74%;
+}
+
+
+
+.table-focus{
+    /* border-radius: 200px 200px 200px 200px; */
+    width: 24%;
+    height: auto;
+    background: url(myassets/items-step-qqoqccp.png);
+    background-size: cover;
+    background-size: center;
+}
+
+
+.step-qqc{
+    padding: 0 10px 0 10px;
+    font-family: alkatra, sans-serif;
+    padding: 50% 0 50% 0;
+}
+
+
+.items{
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+}
+
+.items-icons{
+    width: 18%;
+    margin-right: 10px;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-icon-1{
+    background: url(myassets/items-icons-1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px 24px 24px 24px;
+}
+.item-icon-2{
+    background: url(myassets/items-icons-2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px 24px 24px 24px;
+}
+.item-icon-3{
+    background: url(myassets/items-icons-3.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px 24px 24px 24px;
+}
+
+
+.parag{
+    font-family: alkatra, sans-serif;
+    text-align: left;
+    width: 80%;
+
+}
+
