@@ -102,11 +102,6 @@ header {
   height: 115vh;
   width: 100%;
 }
-@media (max-width: 1100px) {
-  header {
-    max-height: 1000px;
-  }
-}
 @media (max-width: 700px) {
   header {
     width: 100%;
@@ -115,7 +110,6 @@ header {
 header .wrapper,
 header .wrapper-cours {
   max-width: 1134px;
-  height: 115vh;
   position: relative;
   margin: 0 auto;
 }
