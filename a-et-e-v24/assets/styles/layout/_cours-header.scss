@@ -1,0 +1,12 @@
+header {
+
+    .wrapper-cours,
+    .wrapper-defis {
+        height: 10vh;
+
+        @media(max-width: 1100px) {
+            // width: 100%;
+            // border: 3px solid greenyellow;
+        }
+    }
+}

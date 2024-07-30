@@ -1,0 +1,29 @@
+main {
+    .wrapper {
+        .last-publication {
+
+            p {
+                text-align: right;
+            }
+        }
+
+        .body-article,
+        .body-video,
+        .body-slide,
+        .body-podcast,
+        .body-qcm {
+            p {
+                font-size: 20px;
+                line-height: 30px;
+                margin: 0 0 15px 0;
+            }
+        }
+
+        section {
+            .subtitle {
+                font-size: 26px;
+                margin: 0 0 20px 0;
+            }
+        }
+    }
+}

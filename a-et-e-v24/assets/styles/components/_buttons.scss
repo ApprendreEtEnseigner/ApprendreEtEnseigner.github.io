@@ -1,0 +1,53 @@
+//! Bouton de base 
+@mixin btn {
+    padding: 16px 32px;
+    border-radius: 24px;
+    color: #fff;
+    display: inline-block;
+    font-family: $poppins-bold;
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+
+    @media(max-width: 1100px) {
+        .btn {
+            padding: 12px 32px;
+        }
+    }
+}
+
+//! bouton dark 
+@mixin btn-dark {
+    background: $dark;
+}
+
+//! bouton light 
+@mixin btn-light {
+    background: $orange;
+}
+
+.btn.dark {
+    @include btn;
+    @include btn-dark;
+
+}
+
+.btn.light {
+    @include btn;
+    @include btn-light;
+
+}
+
+//! bouton with icon 
+.btn.enrol-icon {
+    &::before {
+        content: url("../img/enroll-icon.svg");
+        position: absolute;
+        top: 50%;
+        left: 32px;
+        transform: translateY(-50%);
+    }
+
+    padding-left: 60px;
+}

@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "lato-black";
+    src: "../../fonts/Lato-Black.ttf";
+}
+
+@font-face {
+    font-family: "lato-regular";
+    src: "../../fonts/Lato-Regular.ttf";
+}
+
+@font-face {
+    font-family: "poppins-black";
+    src: "../../fonts/Poppins-Black.ttf";
+}
+
+@font-face {
+    font-family: "poppins-bold";
+    src: "../../fonts/Poppins-Bold.ttf";
+}
+
+@font-face {
+    font-family: "poppins-regular";
+    src: "../../fonts/Poppins-Regular.ttf";
+}
+
+@font-face {
+    font-family: "raleway-black";
+    src: "../../fonts/Raleway-Black.ttf";
+}
+
+$lato-black: lato-black, sans-serif;
+$lato-regular: lato-regular, sans-serif;
+$poppins-black: poppins-black, sans-serif;
+$poppins-bold: poppins-bold, sans-serif;
+$poppins-regular: poppins-regular, sans-serif;
+$raleway-black: raleway-black, sans-serif;

@@ -1,0 +1,44 @@
+main {
+    .accordion {
+        .accordion-body {
+            .courses-section {
+
+                .format-p {
+                    p {
+                        font-size: 20px;
+                        padding: 0 30px;
+                        line-height: 32px;
+                    }
+                }
+
+                .porfolio-cards {
+                    .porfolio-card {
+                        display: flex;
+                        justify-content: center;
+                        gap: 60px;
+                        max-height: 450px;
+
+                        .left-card {
+                            img {
+                                width: 500px;
+                                height: 280px;
+                            }
+
+                        }
+
+                        .right-card {
+                            a {
+                                color: #fff;
+                                font-weight: bold;
+                                margin-top: 24px;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}

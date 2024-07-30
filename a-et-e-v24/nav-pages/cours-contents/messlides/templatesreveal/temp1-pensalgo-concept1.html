@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/simple.css">
+	<link rel="stylesheet" href="temp-style.css">
+	<link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!--! ---------------------------------STEP 1 => Quoi ?---------------------------------------- -->
+			<section>
+
+				<section data-background-image="myassets/baground-reveal.png">
+					<div class="bloc-content" style="width: 100%;">
+						<h2>Comment différencier let, const et var ?</h2>
+						<div class="table-parent">
+							<div class="table-focus">
+								<div class="out-border-1">
+									<p class="step-qqc"> 1 / 3</p>
+
+								</div>
+							</div>
+
+							<div class="table-items">
+
+								<div class="items item-1">
+
+									<div class="txt-content">
+										<strong class="items-icons">
+											<i class="fa-solid fa-pen-to-square fa-rotate-270"
+												style="color: #ffffff;"></i>
+										</strong>
+										<p class="parag">
+											let est comme une boîte que vous pouvez remplir et vider à volonté.
+										</p>
+									</div>
+								</div>
+								<div class="items item-2">
+									<div class="txt-content marg-left">
+										<strong class="items-icons" id="items-icons-2"
+											style="position: absolute; left: 50px;">
+											<i class="fa-solid fa-pen-to-square fa-rotate-270"
+												style="color: #ffffff;"></i>
+										</strong>
+										<p class="parag">
+											const est comme une boîte verrouillée, une fois remplie, elle ne peut pas
+											être modifiée.
+										</p>
+									</div>
+								</div>
+								<div class="items item-3">
+									<div class="txt-content">
+										<strong class="items-icons">
+											<i class="fa-solid fa-pen-to-square fa-rotate-270"
+												style="color: #ffffff;"></i>
+										</strong>
+										<p class="parag">
+											var est l’ancienne version de let, mais avec des règles moins strictes.
+										</p>
+									</div>
+								</div>
+
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+
+				<!-- <section data-background-image="myassets/baground-reveal.png">
+					<div class="bloc-content">
+						<h2>Le compilateur en informatique  </h2>
+						<div class="table-parent">
+							<div class="table-focus">
+								<div class="out-border-1">
+									<p class="step-qqc">Quoi ?</p>
+
+								</div>
+							</div>
+
+							<div class="table-items">
+								
+								<div class="items item-1">
+									
+									<div class="txt-content" >
+										<strong class="items-icons">
+											<i class="fa-solid fa-pen-to-square fa-rotate-270" style="color: #ffffff;"></i>									
+										</strong>
+										<p class="parag">
+											...de parler aux serveurs Web.
+											<br><br>
+										</p>
+									</div>
+								</div>
+								<div class="items item-2">
+									<div class="txt-content marg-left" >
+										<strong class="items-icons" id="items-icons-2" style="position: absolute; left: 50px;">
+											<i class="fa-solid fa-pen-to-square fa-rotate-270" style="color: #ffffff;"></i>																				
+										</strong>
+										<p class="parag">
+											<br><br>
+										</p>
+									</div>
+								</div>
+								<div class="items item-3">
+									<div class="txt-content">
+										<strong class="items-icons">
+											<i class="fa-solid fa-pen-to-square fa-rotate-270" style="color: #ffffff;"></i>																															
+										</strong>
+										<p class="parag">
+											<br><br>
+										</p>
+									</div>
+								</div>
+								
+	
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</section> -->
+			</section>
+
+			<!--! ---------------------------------------STEP 2 => Qui ?---------------------------------------- -->
+
+			<section>
+
+				<section data-background-image="myassets/baground-reveal.png">
+					<div class="bloc-content">
+						<h2>Comment nommer une variable selon les conventions du JavaScript ? </h2>
+						<div class="table-parent">
+							<div class="table-focus">
+								<div class="out-border-1">
+									<p class="step-qqc">2 / 3</p>
+
+								</div>
+							</div>
+
+							<div class="table-items">
+
+								<div class="items item-1">
+
+									<div class="txt-content">
+										<strong class="items-icons">
+											<i class="fa-solid fa-pen-to-square fa-rotate-270"
+												style="color: #ffffff;"></i>
+										</strong>
+										<p class="parag">
+											Comme nommer un animal de compagnie, il doit être unique et significatif.
+									</div>
+								</div>
+								<div class="items item-2">
+									<div class="txt-content marg-left">
+										<strong class="items-icons" id="items-icons-2"
+											style="position: absolute; left: 50px;">
+											<i class="fa-solid fa-pen-to-square fa-rotate-270"
+												style="color: #ffffff;"></i>
+										</strong>
+										<p class="parag">
+											Il doit commencer par une lettre, un dollar ou un underscore.
+										</p>
+									</div>
+								</div>
+								<div class="items item-3">
+									<div class="txt-content">
+										<strong class="items-icons">
+											<i class="fa-solid fa-pen-to-square fa-rotate-270"
+												style="color: #ffffff;"></i>
+										</strong>
+										<p class="parag">
+											Pas d’espaces ou de caractères spéciaux, sauf le dollar et l’underscore.
+										</p>
+									</div>
+								</div>
+
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+				<!-- <section data-background-image="myassets/baground-reveal.png" >
+						<div class="bloc-content">
+							<h2>Le compilateur en informatique </h2>
+							<div class="table-parent">
+								<div class="table-focus">
+									<div class="out-border-1">
+										<p class="step-qqc">Qui ?</p>
+	
+									</div>
+								</div>
+	
+								<div class="table-items">
+									
+									<div class="items item-1">
+										
+										<div class="txt-content" >
+											<strong class="items-icons">
+												<i class="fa-solid fa-pen-to-square fa-rotate-270" style="color: #ffffff;"></i>									
+											</strong>
+											<p class="parag">
+												...résoudre des problèmes complexes. 
+												<br><br>
+											</p>
+										</div>
+									</div>
+									<div class="items item-2">
+										<div class="txt-content marg-left" >
+											<strong class="items-icons" id="items-icons-2" style="position: absolute; left: 50px;">
+												<i class="fa-solid fa-pen-to-square fa-rotate-270" style="color: #ffffff;"></i>																				
+											</strong>
+											<p class="parag">
+												Tout le monde utilise des algorithmes dans,...
+											</p>
+										</div>
+									</div>
+									<div class="items item-3">
+										<div class="txt-content">
+											<strong class="items-icons">
+												<i class="fa-solid fa-pen-to-square fa-rotate-270" style="color: #ffffff;"></i>																											
+											</strong>
+											<p class="parag">
+												...la vie quotidienne souvent sans même s’en rendre compte.
+											</p>
+										</div>
+									</div>
+									
+		
+								</div>
+								
+							</div>
+							
+						</div>
+						
+					</section> -->
+			</section>
+			<!--! ---------------------------------------STEP 3 => OU ?---------------------------------------- -->
+			<section>
+
+				<section data-background-image="myassets/baground-reveal.png">
+					<div class="bloc-content">
+						<div class="bloc-content">
+							<h2>Comment afficher la valeur d’une variable dans la console ? </h2>
+							<div class="table-parent">
+								<div class="table-focus">
+									<div class="out-border-1">
+										<p class="step-qqc">3 / 3</p>
+
+									</div>
+								</div>
+
+								<div class="table-items">
+
+									<div class="items item-1">
+
+										<div class="txt-content">
+											<strong class="items-icons">
+												<i class="fa-solid fa-pen-to-square fa-rotate-270"
+													style="color: #ffffff;"></i>
+											</strong>
+											<p class="parag">
+												C’est comme montrer un dessin, utilisez console.log(nom_de_variable).
+											</p>
+										</div>
+									</div>
+									<div class="items item-2">
+										<div class="txt-content marg-left">
+											<strong class="items-icons" id="items-icons-2"
+												style="position: absolute; left: 50px;">
+												<i class="fa-solid fa-pen-to-square fa-rotate-270"
+													style="color: #ffffff;"></i>
+											</strong>
+											<p class="parag">
+												Cela affiche la valeur de la variable dans la console.
+											</p>
+										</div>
+									</div>
+									<div class="items item-3">
+										<div class="txt-content">
+											<strong class="items-icons">
+												<i class="fa-solid fa-pen-to-square fa-rotate-270"
+													style="color: #ffffff;"></i>
+											</strong>
+											<p class="parag">
+												C’est un excellent outil pour vérifier vos travaux.
+											</p>
+										</div>
+									</div>
+
+
+								</div>
+
+							</div>
+
+						</div>
+
+				</section>
+
+				<!-- <section data-background-image="myassets/baground-reveal.png">
+						<div class="bloc-content">
+						<div class="bloc-content">
+							<h2>Le compilateur en informatique</h2>
+							<div class="table-parent">
+								<div class="table-focus">
+									<div class="out-border-1">
+										<p class="step-qqc">Où ?</p>
+	
+									</div>
+								</div>
+	
+								<div class="table-items">
+									
+									<div class="items item-1">
+										
+										<div class="txt-content" >
+											<strong class="items-icons">
+												<i class="fa-solid fa-pen-to-square fa-rotate-270" style="color: #ffffff;"></i>									
+											</strong>
+											<p class="parag">
+												Utilisable partout où il y a un problème à... 
+											</p>
+										</div>
+									</div>
+									<div class="items item-2">
+										<div class="txt-content marg-left" >
+											<strong class="items-icons" id="items-icons-2" style="position: absolute; left: 50px;">
+												<i class="fa-solid fa-pen-to-square fa-rotate-270" style="color: #ffffff;"></i>																				
+											</strong>
+											<p class="parag">
+												...résoudre ou une tâche à accomplir.
+												<br><br>
+											</p>
+										</div>
+									</div>
+									<div class="items item-3">
+										<div class="txt-content">
+											<strong class="items-icons">
+												<i class="fa-solid fa-pen-to-square fa-rotate-270" style="color: #ffffff;"></i>																															
+											</strong>
+											<p class="parag">
+												<br><br>
+											</p>
+										</div>
+									</div>
+									
+		
+								</div>
+								
+							</div>
+							
+						</div>
+						
+					  </section> -->
+
+			</section>
+			<!--! ---------------------------------------STEP 4 => QUAND ?-------------------------------------- -->
+			<section>
+
+				<!-- <section data-background-image="myassets/baground-reveal.png">
+					<div class="bloc-content">
+						<div class="bloc-content">
+							<h2>Exemples ? </h2>
+							<div class="table-parent">
+								<div class="table-focus">
+									<div class="out-border-1">
+										<p class="step-qqc"> 4 / 4</p>
+
+									</div>
+								</div>
+
+								<div class="table-items">
+
+									<div class="items item-1">
+
+										<div class="txt-content">
+											<strong class="items-icons">
+												<i class="fa-solid fa-pen-to-square fa-rotate-270"
+													style="color: #ffffff;"></i>
+											</strong>
+											<p class="parag">
+												let monAge = 12; <br>
+												console.log(monAge); // affiche 12
+											</p>
+										</div>
+									</div>
+									<div class="items item-2">
+										<div class="txt-content marg-left">
+											<strong class="items-icons" id="items-icons-2"
+												style="position: absolute; left: 50px;">
+												<i class="fa-solid fa-pen-to-square fa-rotate-270"
+													style="color: #ffffff;"></i>
+											</strong>
+											<p class="parag">
+												const pi = 3.14; <br>
+												console.log(pi); // affiche 3.14
+											</p>
+										</div>
+									</div>
+									<div class="items item-3">
+										<div class="txt-content">
+											<strong class="items-icons">
+												<i class="fa-solid fa-pen-to-square fa-rotate-270"
+													style="color: #ffffff;"></i>
+											</strong>
+											<p class="parag">
+												var nom = "Yero"; <br>
+												console.log(nom); // affiche Yero
+											</p>
+										</div>
+									</div>
+
+
+								</div>
+
+							</div>
+
+						</div>
+
+				</section> -->
+
+				<section data-background-image="myassets/baground-reveal.png" data-markdown id="font-code">
+					<div>
+						<textarea data-template>
+									## Exemple 1 : 
+									let monAge = 12; <br>
+									console.log(monAge); // affiche 12
+									---
+									## Exemple 2 : 
+									const pi = 3.14; <br>
+									console.log(pi); // affiche 3.14 
+									---
+									## Exemple 3 : 
+									var nom = "Yero"; <br>
+									console.log(nom); // affiche Yero
+
+							  </textarea>
+					</div>
+				</section>
+
+				<!-- <section data-background-image="myassets/baground-reveal.png">
+					  <div class="bloc-content">
+					  <div class="bloc-content">
+						  <h2>Le compilateur en informatique</h2>
+						  <div class="table-parent">
+							  <div class="table-focus">
+								  <div class="out-border-1">
+									  <p class="step-qqc">Quand ?</p>
+  
+								  </div>
+							  </div>
+  
+							  <div class="table-items">
+								  
+								  <div class="items item-1">
+									  
+									  <div class="txt-content" >
+										  <strong class="items-icons">
+											  <i class="fa-solid fa-pen-to-square fa-rotate-270" style="color: #ffffff;"></i>									
+										  </strong>
+										  <p class="parag">
+											Pour prendre des décisions complexes basées sur des données.
+										</p>
+									  </div>
+								  </div>
+								  <div class="items item-2">
+									  <div class="txt-content marg-left" >
+										  <strong class="items-icons" id="items-icons-2" style="position: absolute; left: 50px;">
+											  <i class="fa-solid fa-pen-to-square fa-rotate-270" style="color: #ffffff;"></i>																				
+										  </strong>
+										  <p class="parag">
+												<br><br>
+											</p>							
+									  </div>
+								  </div>
+								  <div class="items item-3">
+									  <div class="txt-content">
+										  <strong class="items-icons">
+											  <i class="fa-solid fa-pen-to-square fa-rotate-270" style="color: #ffffff;"></i>																															
+										  </strong>
+										  <p class="parag">
+												<br><br>
+										  </p>
+									  </div>
+								  </div>
+								  
+	  
+							  </div>
+							  
+						  </div>
+						  
+					  </div>
+					  
+					</section>
+					 -->
+			</section>
+
+			<!--! ------------------------------------STEP 5 => COMMENT ?------------------------------------ -->
+
+			<!--! ------------------------------------STEP 6 => COMBIEN ?------------------------------------ -->
+
+			<!--! ------------------------------------STEP 7 => POURQUOI ?------------------------------------ -->
+
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
