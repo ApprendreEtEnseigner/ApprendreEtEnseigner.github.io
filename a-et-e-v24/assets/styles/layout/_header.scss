@@ -6,41 +6,48 @@ header {
 
 
     @media(max-width: 1100px) {
-        max-height: 1000px;
+        height: 100%;
     }
 
     @media(max-width: 800px) {
+        height: 100%;
         width: 100%;
     }
 
     @media(max-width: 700px) {
-        height: calc(170vh + 18vh);
+        height: 100%;
         width: 100%;
     }
 
     .wrapper,
     .wrapper-cours {
         max-width: 1134px;
-        // height: calc(100vh + 15vh);
         position: relative;
         margin: 0 auto;
+        height: 100%;
 
         @media(max-width: 1100px) {
-            height: calc(170vh + 18vh);
+            height: calc(170vh + 25vh);
             padding: 0 100px;
-            max-height: 1000px;
+            // max-height: 1000px;
         }
 
         @media(max-width: 800px) {
-            height: calc(170vh + 18vh);
+            // height: calc(170vh + 25vh);
             width: 800px;
 
         }
 
         @media(max-width: 700px) {
-            height: calc(170vh + 18vh);
+            // height: calc(170vh + 25vh);
             width: 100%;
             padding: 0 32px;
+        }
+
+        @media(max-width: 300px) {
+            height: calc(170vh + 35vh);
+            width: 100%;
+            padding: 0 12px;
         }
 
         nav {
@@ -211,8 +218,6 @@ header {
                 max-height: 1100px;
                 flex-direction: column;
             }
-
-
 
             .left {
                 align-self: flex-start;

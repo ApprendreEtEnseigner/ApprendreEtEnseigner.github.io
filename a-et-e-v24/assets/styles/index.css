@@ -104,17 +104,18 @@ header {
 }
 @media (max-width: 1100px) {
   header {
-    max-height: 1000px;
+    height: 100%;
   }
 }
 @media (max-width: 800px) {
   header {
+    height: 100%;
     width: 100%;
   }
 }
 @media (max-width: 700px) {
   header {
-    height: 188vh;
+    height: 100%;
     width: 100%;
   }
 }
@@ -123,28 +124,34 @@ header .wrapper-cours {
   max-width: 1134px;
   position: relative;
   margin: 0 auto;
+  height: 100%;
 }
 @media (max-width: 1100px) {
   header .wrapper,
   header .wrapper-cours {
-    height: 188vh;
+    height: 195vh;
     padding: 0 100px;
-    max-height: 1000px;
   }
 }
 @media (max-width: 800px) {
   header .wrapper,
   header .wrapper-cours {
-    height: 188vh;
     width: 800px;
   }
 }
 @media (max-width: 700px) {
   header .wrapper,
   header .wrapper-cours {
-    height: 188vh;
     width: 100%;
     padding: 0 32px;
+  }
+}
+@media (max-width: 300px) {
+  header .wrapper,
+  header .wrapper-cours {
+    height: 205vh;
+    width: 100%;
+    padding: 0 12px;
   }
 }
 header .wrapper nav,
