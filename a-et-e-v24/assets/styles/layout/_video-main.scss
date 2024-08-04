@@ -2,15 +2,48 @@ main {
     .wrapper {
         margin-top: 60px;
 
-        .custom-h2 {
+        #custom-h2 {
             font-size: 32px;
             text-align: center;
+            padding: 0 32px;
+
+
+            @media(max-width: 800px) {
+                font-size: 24px;
+            }
+
+            @media(max-width: 700px) {
+                font-size: 20px;
+                padding: 0 24px;
+            }
         }
 
-        .body-video {
-            display: flex;
-            justify-content: center;
+        .body-video,
+        .body-podcast {
+            margin: 0 auto;
+            width: 80%;
+            height: 450px;
+            border: 3px solid yellow;
 
+            @media(max-width: 1100px) {
+                padding: 0px;
+
+
+            }
+
+            @media(max-width: 800px) {
+                width: 70%;
+                height: 250px;
+                padding: 0px;
+
+            }
+
+
+
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 }

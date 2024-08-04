@@ -8,20 +8,37 @@ main {
                         font-size: 20px;
                         padding: 0 30px;
                         line-height: 32px;
+
+                        @media(max-width: 800px) {
+                            padding: 0 24px;
+                        }
                     }
                 }
 
                 .porfolio-cards {
                     .porfolio-card {
                         display: flex;
+                        flex-direction: column;
                         justify-content: center;
                         gap: 60px;
                         max-height: 450px;
 
+                        @media(max-width: 1100px) {
+                            align-items: center;
+                            gap: 32px;
+                            max-height: 950px;
+                        }
+
                         .left-card {
+                            width: 60%;
+
+                            @media(max-width: 1100px) {
+                                width: 100%;
+                            }
+
                             img {
-                                width: 500px;
-                                height: 280px;
+                                width: 100%;
+                                max-height: 90%;
                             }
 
                         }

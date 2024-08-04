@@ -335,7 +335,6 @@ main {
     .accordion {
         @media(max-width: 700px) {
             width: 100%;
-            border: 6px solid rgb(0, 200, 255);
         }
 
         .accordion-item {
@@ -344,6 +343,10 @@ main {
                     font-size: 24px;
                     font-family: $raleway-black;
                     font-weight: bold;
+
+                    @media(max-width: 700px) {
+                        font-size: 16px;
+                    }
                 }
 
             }
@@ -382,7 +385,7 @@ main {
             padding-top: 50px;
 
             @media(max-width: 700px) {
-                padding-top: 40px;
+                padding-top: 24px;
             }
 
             a {
@@ -403,6 +406,8 @@ main {
 
                 @media(max-width: 800px) {
                     max-height: 300px;
+                    padding: 12px 24px;
+
                 }
 
                 @media(max-width: 700px) {
