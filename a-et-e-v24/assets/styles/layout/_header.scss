@@ -299,6 +299,10 @@ header {
                     color: $dark;
                     z-index: 1;
 
+                    @media(max-width: 700px) {
+                        // width: 135px;
+                    }
+
                     &.videos {
                         position: absolute;
                         left: 60%;
@@ -389,6 +393,7 @@ header {
                         color: $dark;
 
                         @media(max-width: 700px) {
+                            gap: 9px;
                             padding: 5px 12px;
                         }
 
@@ -402,6 +407,11 @@ header {
                             left: 0px;
                             top: 6px;
                             z-index: -1;
+
+                            @media(max-width: 700px) {
+                                width: calc(100% + 2px);
+
+                            }
                         }
 
                         .left-content {

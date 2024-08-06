@@ -532,6 +532,7 @@ header .wrapper-cours .hero-section .achevement-cards .achevement-card .content 
 @media (max-width: 700px) {
   header .wrapper .hero-section .achevement-cards .achevement-card .content,
   header .wrapper-cours .hero-section .achevement-cards .achevement-card .content {
+    gap: 9px;
     padding: 5px 12px;
   }
 }
@@ -546,6 +547,12 @@ header .wrapper-cours .hero-section .achevement-cards .achevement-card .content:
   left: 0px;
   top: 6px;
   z-index: -1;
+}
+@media (max-width: 700px) {
+  header .wrapper .hero-section .achevement-cards .achevement-card .content::before,
+  header .wrapper-cours .hero-section .achevement-cards .achevement-card .content::before {
+    width: calc(100% + 2px);
+  }
 }
 header .wrapper .hero-section .achevement-cards .achevement-card .content .left-content,
 header .wrapper-cours .hero-section .achevement-cards .achevement-card .content .left-content {
