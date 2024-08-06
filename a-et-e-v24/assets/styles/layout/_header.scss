@@ -1,12 +1,12 @@
 //! HEDER 
 header {
     background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
-    height: calc(100vh + 15vh);
+    height: 115vh;
     width: 100%;
 
 
     @media(max-width: 1100px) {
-        // height: calc((100vh + 15vh) * 1.7);
+        height: calc((100vh + 15vh) * 1.6);
     }
 
     @media(max-width: 800px) {
@@ -14,11 +14,12 @@ header {
     }
 
     @media(max-width: 700px) {
+        height: calc((100vh + 15vh) * 1.7);
         width: 100%;
     }
 
     @media(max-width: 300px) {
-        // height: calc((100vh + 15vh) * 1.8);
+        height: calc((100vh + 15vh) * 1.8);
     }
 
     .wrapper,
