@@ -110,12 +110,19 @@ header {
 }
 @media (max-width: 800px) {
   header {
+    height: 1040px;
     width: 100%;
   }
 }
 @media (max-width: 700px) {
   header {
+    height: 1050px;
     width: 100%;
+  }
+}
+@media (max-width: 300px) {
+  header {
+    height: 1110px;
   }
 }
 header .wrapper,
@@ -428,7 +435,7 @@ header .wrapper-cours .hero-section .achevement-cards .achevement-card.videos {
 @media (max-width: 700px) {
   header .wrapper .hero-section .achevement-cards .achevement-card.videos,
   header .wrapper-cours .hero-section .achevement-cards .achevement-card.videos {
-    left: 2%;
+    left: 0%;
     top: 33px;
   }
 }
@@ -448,7 +455,7 @@ header .wrapper-cours .hero-section .achevement-cards .achevement-card.podcasts 
 @media (max-width: 700px) {
   header .wrapper .hero-section .achevement-cards .achevement-card.podcasts,
   header .wrapper-cours .hero-section .achevement-cards .achevement-card.podcasts {
-    left: 2%;
+    left: 0%;
     top: 121px;
   }
 }
@@ -461,14 +468,14 @@ header .wrapper-cours .hero-section .achevement-cards .achevement-card.slides {
 @media (max-width: 1100px) {
   header .wrapper .hero-section .achevement-cards .achevement-card.slides,
   header .wrapper-cours .hero-section .achevement-cards .achevement-card.slides {
-    left: 2%;
+    left: 0%;
     top: 225px;
   }
 }
 @media (max-width: 700px) {
   header .wrapper .hero-section .achevement-cards .achevement-card.slides,
   header .wrapper-cours .hero-section .achevement-cards .achevement-card.slides {
-    left: 2%;
+    left: 0%;
     top: 207px;
   }
 }
@@ -488,7 +495,7 @@ header .wrapper-cours .hero-section .achevement-cards .achevement-card.articles 
 @media (max-width: 700px) {
   header .wrapper .hero-section .achevement-cards .achevement-card.articles,
   header .wrapper-cours .hero-section .achevement-cards .achevement-card.articles {
-    left: 2%;
+    left: 0%;
     top: 292px;
   }
 }
@@ -502,6 +509,13 @@ header .wrapper-cours .hero-section .achevement-cards .achevement-card.defis {
   header .wrapper .hero-section .achevement-cards .achevement-card.defis,
   header .wrapper-cours .hero-section .achevement-cards .achevement-card.defis {
     left: 2%;
+    top: 374px;
+  }
+}
+@media (max-width: 1100px) {
+  header .wrapper .hero-section .achevement-cards .achevement-card.defis,
+  header .wrapper-cours .hero-section .achevement-cards .achevement-card.defis {
+    left: 0%;
     top: 374px;
   }
 }
