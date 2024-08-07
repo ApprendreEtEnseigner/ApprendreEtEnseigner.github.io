@@ -58,7 +58,9 @@ main {
             }
 
             #title-content {
-                font-size: 32px;
+                font-family: $raleway-black, sans-serif;
+                font-weight: bold;
+                font-size: 36px;
 
                 @media(max-width: 1100px) {
                     font-size: 28px;

@@ -1235,7 +1235,9 @@ main .wrapper .body-qcm p {
   }
 }
 main .wrapper section #title-content {
-  font-size: 32px;
+  font-family: raleway-black, sans-serif, sans-serif;
+  font-weight: bold;
+  font-size: 36px;
 }
 @media (max-width: 1100px) {
   main .wrapper section #title-content {
