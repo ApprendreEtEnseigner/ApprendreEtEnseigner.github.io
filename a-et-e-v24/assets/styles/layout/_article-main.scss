@@ -6,7 +6,7 @@ main {
         .wrapper-articles,
         .wrapper-videos,
         .wrapper-podcast {
-            padding: 0 100px;
+            padding: 0 24px;
 
             @media(max-width: 800px) {
                 padding: 0 32px;
@@ -42,7 +42,7 @@ main {
 
                 @media(max-width: 800px) {
                     line-height: 22px;
-                    font-size: 14px;
+                    font-size: 17px;
                 }
 
             }

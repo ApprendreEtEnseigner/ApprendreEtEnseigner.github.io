@@ -551,7 +551,7 @@ header .wrapper-cours .hero-section .achevement-cards .achevement-card .content:
 @media (max-width: 700px) {
   header .wrapper .hero-section .achevement-cards .achevement-card .content::before,
   header .wrapper-cours .hero-section .achevement-cards .achevement-card .content::before {
-    width: calc(100% + 2px);
+    width: 100%;
   }
 }
 header .wrapper .hero-section .achevement-cards .achevement-card .content .left-content,
@@ -1181,7 +1181,7 @@ main .wrapper .accordion .courses-section {
 main .wrapper .wrapper-articles,
 main .wrapper .wrapper-videos,
 main .wrapper .wrapper-podcast {
-  padding: 0 100px;
+  padding: 0 24px;
 }
 @media (max-width: 800px) {
   main .wrapper .wrapper-articles,
@@ -1226,7 +1226,7 @@ main .wrapper .body-qcm p {
   main .wrapper .body-podcast p,
   main .wrapper .body-qcm p {
     line-height: 22px;
-    font-size: 14px;
+    font-size: 17px;
   }
 }
 @media (max-width: 700px) {

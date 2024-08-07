@@ -409,7 +409,7 @@ header {
                             z-index: -1;
 
                             @media(max-width: 700px) {
-                                width: calc(100% + 2px);
+                                width: 100%;
 
                             }
                         }
