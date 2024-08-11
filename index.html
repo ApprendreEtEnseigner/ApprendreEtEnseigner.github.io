@@ -1,232 +1,378 @@
-<! DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-			<!-- ceci permet de gerer la partie RESPONSIVE-->
-		<meta name="viewport" content="width-device-width, initial-scale=1">
-			<!-- ceci permet de gerer la partie REFERENCEMENT-->
-		<meta name="description" content="Bienvenue sur le site de Yero Bhoye SOW">
-		<link rel="stylesheet" href="menu.css">
-		<link rel="stylesheet" href="contenu.css">
-		<title>Accueil</title>
-	</head>
-	
-	<body>
-		
-				<!-- ceci est l'entete de ma 
-				
-				page-->
-		<header>
-			
-			<div class="div-responsive">
-				<a href="#"><img src="AETE.png" alt="logo-entete" class="imglogoEntete-responsive"></a>
-				<h2 class="txt-entete-responsive"> Apprendre-et-Enseigner </h2>
-			</div>
-			<div>
-				<a href="#"><img src="logo-entete.jpg" alt="logo-entete" class="imglogoEntete"></a>
-				<h3 class="txt-joubert"> « Enseigner, c’est apprendre deux fois. » 
-					<br><div class="txt-droite"> J. Joubert </div></h3>
-			</div>
-			
+<!DOCTYPE html>
+<html lang="en">
 
-		</header>
-				<!-- ceci est le MENU DE NAVIGATION -->
-		<nav>
-			<!-- ceci permet de gerer la partie RESPONSIVE-->
-			<label for="menu-mobile" class="menu-mobile">Afficher le Menu</label>
-			<input type="checkbox" id="menu-mobile" role="button">
-			<ul>
-				<li class="menu-cours"><a href="#">Accueil</a></li>
-				<li class="menu-cours"><a href="#">Cours</a>
-					<ul   class="submenu">
-						<li><a href="submenu/cours-article.html">Tutoriels</a></li>
-						<li><a href="submenu/cours-video.html">Vidéos</a></li>
-						<li><a href="submenu/cours-audio.html">Audios</a></li>
-					</ul>
-				</li>
-				<li class="menu-ressources"><a href="#">Réssources</a>
-					<ul  class="submenu">
-						<li><a href="submenu/cours-pdf.html">Livres</a></li>
-						<li><a href="submenu/exercice-pdf.html">Exercices</a></li>
-						<li><a href="submenu/divers.html">Divers</a></li>
-					</ul>
-				</li>
-				<li class="menu-livre"><a href="#">Tribune</a>
-					<ul  class="submenu">
-						<li><a href="submenu/livre-audio.html">Audios</a></li>
-						<li><a href="submenu/livre-pdf.html">Vidéos</a></li>
-						<li><a href="submenu/autre.html">Trucs et Astuces</a></li>
-					</ul>
-				</li>
-				<li class="menu-devperso"><a href="#">Personnalité</a>
-					<ul class="submenu">
-						<li><a href="submenu/devperso-livre-audio.html">Vidéos</a></li>
-						<li><a href="submenu/carte-mentale.html">Audios</a></li>
-						<li><a href="submenu/devperso-trucs-astuces.html">Carte mentale</a></li>
-					</ul>
-				</li>
-				<li class="menu-qui-sje"><a href="#">Qui suis-je</a>
-					<ul class="submenu">
-						<li><a href="submenu/mes-realisations.html">Mes Réalisations</a></li>
-						<li><a href="submenu/mon-cv.html">Mon CV</a></li>
-					</ul>
-				</li>
-			</ul>
-		</nav>
-		
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A & E | Accueil</title>
 
-				<!-- ceci est Le CONTENU DE LA PAGE-->
-		<section>
-				<!-- NB les contenneurs but = avoir une hauteur dynamique 
-				inverser les conteneur ie contenneur d/c/g 
-				Pour que le cont. g soit en premiere position sur navigateur
-				-->
-				
-			<div class="contenneur-d">
-				
-			
-				<div class="contenneur-c" id="div-txt-responsive-index">
-					
-					<div class="contenneur-g" >
-						<div class="col-c">
-							
-						
-							<div class="div-txt-c">
-								<div class="concept me-regler">
-									<div class="accroche">
-										<h1> Êtes-vous pour apprendre. <br>
-											<strong class="for-teach"> ou pour enseigner ? </strong> 
-										</h1>
-									</div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/styles/index.css">
+</head>
 
-									<div class="response">
-										<h2>Nous sommes pour les deux.</h2>
+<body>
+    <header>
+        <div class="wrapper">
+            <nav class="nav-links">
+                <div class="logo">
+                    <img src="./assets/img/my-logo2.jpg" alt="logo a & e">
 
-										<h3>Notre approche</h3>
-										<p>
+                </div>
+                <ul>
+                    <li class="link-underline"><a href="./index.html">Accueil</a></li>
+                    <li class="link-underline"><a href="./nav-pages/cours.html" class="feature-clic">Cours</a></li>
+                    <li class="link-underline"><a href="./nav-pages/defis.html" class="feature-clic">Défis</a></li>
+                    <li class="link-underline"><a href="./nav-pages/realisations.html" class="feature-clic">Réalisations</a></li>
+                    <li><a href="./contact" class="btn dark">Contacter</a></li>
 
-											<strong class="bold">Apprendre</strong>, c’est l’énergie nécessaire pour alimenter notre ordinateur biologique (le cerveau). Cela représente les compétences techniques (hard skills). 
-											<strong class="bold">Enseigner</strong>, c’est la notice explicative de notre ordinateur biologique (le cerveau). Cela représente les compétences comportementales (soft skills).
-										</p>
+                    <div class="indicator"></div>
+                </ul>
+            </nav>
 
-										<p>
-											Notre plateforme vous propose une approche innovante pour trouver l’harmonie entre acquérir des connaissances et les mettre en pratique.
-										</p>
-									</div>
-								</div>
+            <!--! End of Desktop Navigation  -->
 
-								<div class="promo-video">
-									<p> Apprendre & Enseigner : la plateforme qui révolutionne l’innovation pédagogique. </p>
-								</div>
-								<div class="body-video">
-									<iframe class="gerer-video" width="560" height="415" src="https://www.youtube.com/embed/mY1b9bAyYSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-								</div>
+            <nav class="mobile-nav">
+                <div class="logo">
+                    <img src="./assets/img/my-logo2.jpg" alt="logo A & E">
+                </div>
+                <div class="menu-icon">
+                    <img src="./assets/img/menu-icon.svg" alt="Icon Menu">
+                </div>
+            </nav>
 
-								<div class="response">
+            <div class="mobile-menu-container">
+                <div class="close-icon">
+                    <img src="./assets/img/close-menu-icon.svg" alt="Icon fermer">
+                </div>
 
-									<h3>Nos outils et techniques</h3>
-									<p>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="./nav-pages/cours.html">Cours</a></li>
+                    <li><a href="./nav-pages/defis.html">Défis</a></li>
+                    <li><a href="./nav-pages/realisations.html">Réalisations</a></li>
+                    <li><a href="#" class="btn dark">Contacter</a></li>
+                </ul>
+            </div>
 
-										Nous mettons à votre disposition des outils et des techniques pratiques qui vous rapprochent de la meilleure version de vous-mêmes. Vous apprendrez comment apprendre plus efficacement, comment enseigner plus facilement, comment développer votre créativité, votre confiance en soi, votre motivation, etc.
-									</p>
+            <!-- ! End of the mobile navigation  -->
 
-									<h3>Nos thématiques</h3>
-									<p>
-										Nous vous offrons des apprentissages sur des sujets passionnants et d’actualités. Vous découvrirez les dernières tendances dans le domaine de l’éducation, de la technologie et de l'entrepreneuriat. Vous enrichirez vos connaissances et vos compétences tout en vous amusant.
-									</p>
-								</div>
 
-								<div class="copy-ressources">
-									<p class="skills"> Quelques hard skills </p>
+            <div class="hero-section">
+                <div class="left">
+                    <h1>L’art d’apprendre <br> en enseignant</h1>
 
-									<a href="./reveal-slides/temp1- rx-atBootDev-concept1.html">
-										<div class="copy-contents">
-											<div class="content-title">
-												<p>Comprendre le protocole HTTP.</p>
-												
-											</div>
-											<div class="content-body">
-												<p>
-													
-													<strong class="bold">Publication:</strong> 2023  <strong class="bold"> Catégorie: </strong> Diapositive
-												</p>
-												<p>
-													C'est comme un facteur qui livre les pages Web à votre maison (ordinateur).
-													C’est un protocole qui permet à votre ordinateur...
-												</p>
-											</div>
-										</div>
-									</a>
+                    <p>
+                        J’investis ma créativité dans la clarification de l’information en misant sur différents outils
+                        de la pensée visuelle. Je suis reconnu pour ma disponibilité, ma pédagogie et ma volonté de
+                        partage de connaissances, pour toujours transformer un sujet ennuyant en un sujet amusant.
+                    </p>
 
-									<a href="./submenu/chap01_RxInfo.html">
-										<div class="copy-contents">
-											<div class="content-title">
-												<p>Pourquoi les réseaux informatiques ?</p>
-												
-											</div>
-											<div class="content-body">
-												<p>
-													
-													<strong class="bold">Publication: </strong> 2022  <strong class="bold"> Catégorie: </strong> Article
-												</p>
-												<p>
-                                       Savez-vous qu'avant pour communiquer à distance c'était très très difficile ? Pour vous le prouver, prenons un exemple très simple. Supposons que vos parents sont au village (à Yomou par exemple) et que vous, vous êtes en ville (à Conakry par exemple) et que vous voulez...
-												</p>
-											</div>
-										</div>
-									</a>
+                    <a href="#" class="btn light enrol-icon">Me Contacter</a>
+                </div>
 
-									<a href="./submenu/ConteneurMainInfo.html">
-										<div class="copy-contents">
-											<div class="content-title">
-												<p>Comprendre la maintenance </p>
-												
-											</div>
-											<div class="content-body">
-												<p>
-													
-													<strong class="bold">Publication: </strong> 2022  <strong class="bold"> Catégorie: </strong> Vidéo
-												</p>
-												<p>
-                                       De comment définir la maintenance, à comment citer les objectifs de la maintenance.
-                                       De comment expliquer la place de la maintenance dans l'entreprise, à comment citer et expliquer...
-												</p>
-											</div>
-										</div>
-									</a>
+                <div class="right-img">
+                    <img src="./assets/img/for-pageaccueil.png" alt="image auteur">
+                </div>
 
-									<a href="./submenu/AudioConteneurBD.html">
-										<div class="copy-contents">
-											<div class="content-title">
-												<p>Pourquoi les bases de données ? </p>
-												
-											</div>
-											<div class="content-body">
-												<p>
-													
-													<strong class="bold">Publication: </strong> 2022  <strong class="bold"> Catégorie: </strong> Podcast
-												</p>
-												<p>
-                                       Si vous avez cliqué sur le lien qui mène à cette page, c'est que vous voulez savoir c'est quoi les bases de données. Et croyez-moi, vous êtes au bon endroit. Nous allons pas à pas découvrir...
-												</p>
-											</div>
-										</div>
-									</a>
-								</div>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			
-		</section>
-				<!-- ceci est le PIED DE PAGE-->
-		<footer>
-			<div class="pied">
-				<p> Copyright 2021 Yéro Bhoye Sow- Toute réproduction interdite. </p>
-			</div>
-		</footer>
-	</body>
+                <div class="achevement-cards">
+                    <div class="achevement-card videos">
+                        <div class="content">
+                            <div class="left-content">
+                                <img src="./assets/img/video-icon.svg" alt="videos icon">
+                            </div>
+                            <div class="right-content">
+
+                                <div>
+                                    <h3>47</h3>
+                                </div>
+
+                                <p>Vidéos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg"></div>
+
+                    <div class="achevement-card podcasts">
+                        <div class="content">
+                            <div class="left-content">
+                                <img src="./assets/img/podcast-icon.svg" alt="podcast-icon">
+                            </div>
+                            <div class="right-content">
+                                <div>
+                                    <h3>05</h3>
+                                </div>
+                                <p>Podcasts</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg"></div>
+
+                    <div class="achevement-card slides">
+                        <div class="content">
+                            <div class="left-content">
+                                <img src="./assets/img/slide-icon.svg" alt="slide-icon">
+                            </div>
+                            <div class="right-content">
+                                <div>
+                                    <h3>17</h3>
+                                </div>
+                                <p>Slides</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achevement-card articles">
+                        <div class="content">
+                            <div class="left-content">
+                                <img src="./assets/img/article-icon.svg" alt="article-icon">
+                            </div>
+                            <div class="right-content">
+                                <div>
+                                    <h3>07</h3>
+                                </div>
+                                <p>Articles</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achevement-card defis">
+                        <div class="content">
+                            <div class="left-content">
+                                <img src="./assets/img/defi-icon.svg" alt="defi-icon">
+                            </div>
+                            <div class="right-content">
+                                <div>
+                                    <h3>15</h3>
+                                </div>
+                                <p>Défis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ! End of the header Section  -->
+
+    <main>
+
+        <section class="wrapper-testimonial">
+            <div class="testimonials-section">
+                <div class="left">
+                    <div class="testimonial-card first">
+                        <div class="content">
+                            <p>
+                                Quelle est votre première impression de la plateforme / des ressources ?
+                            </p>
+                        </div>
+
+                        <div class="info">
+                            <h4>3 réponses</h4>
+                            <div>
+                                <p>Très bonne impression</p>
+                                <p>une tres bonne idée.</p>
+                                <p>Une bonne impression</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card last">
+                        <div class="content">
+                            <p>
+                                Si oui, pourquoi recommanderiez-vous cette plateforme / ces ressources à d’autres
+                                formateurs ?
+                            </p>
+                        </div>
+
+                        <div class="info">
+                            <h4>3 réponses</h4>
+                            <div>
+                                <p>
+                                    Certainement pour les poussez à s’améliorer et à fournir un enseignement de qualité
+                                </p>
+                                <p>oui </p>
+                                <p>
+                                    Oui, par ce qu’il me semble que c’est un moyen efficace de partage de connaissances
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <h2 class="format-h2">
+                        Que disent les visiteurs de la plateforme ?
+                    </h2>
+
+                    <div class="features">
+                        <p>
+                            Plusieurs retours positifs de la part de formateurs et d’étudiants, plus d’engagement pour
+                            la chaine YouTube Apprendre & Enseigner.
+                        </p>
+                        <p>
+                            Appréciations de la diversité des formats de contenus disponibles (vidéos, podcasts,
+                            diapositives, articles..), et l’approche pédagogique utilisée.
+                        </p>
+                    </div>
+
+                    <a href="#" class="btn light desktop-btn">Voir plus</a>
+                </div>
+                <a href="#" class="btn light mobile-btn">Voir plus</a>
+            </div>
+        </section>
+
+        <!-- ! End of the testimonial Section  -->
+
+        <section class="wrapper-approche">
+            <div class="approche-section">
+                <h2 class="quest light">
+                    Êtes-vous pour apprendre <br>
+                    ou pour enseigner ?
+                </h2>
+                <h2 class="rep light">
+                    Nous sommes pour les deux.
+                </h2>
+
+                <div class="content">
+                    <div class="left">
+                        <h3>Quelle est mon approche ?</h3>
+
+                        <p>
+                            Apprendre, c’est l’énergie nécessaire pour alimenter notre ordinateur biologique (le
+                            cerveau). Cela représente les compétences techniques (hard skills). Enseigner, c’est la
+                            notice explicative de notre ordinateur biologique. Cela représente les compétences
+                            comportementales (soft skills).
+                        </p>
+
+                        <p>
+                            Cette plateforme vous propose une approche innovante pour trouver l’harmonie entre acquérir
+                            des connaissances et les mettre en pratique.
+                        </p>
+                    </div>
+
+                    <div class="right">
+                        <div class="video-pitch">
+                            <iframe src="https://www.youtube.com/embed/mY1b9bAyYSo?si=2wNpZcbK2vSqJLML"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ! End of the approche Section  -->
+
+        <section class="courses-section">
+            <h2 class="dark format-h2">Les contenus</h2>
+            <div class="course-cards">
+                <div class="course-card">
+                    <a href="./nav-pages/cours-contents/mesarticles/pro-article01.html">
+                        <h3>Résumé du livre : L’intelligence émotionnelle de Daniel Golman </h3>
+                    </a>
+
+                    <div class="infos-card">
+                        <p class="info">
+                            <strong>Publication:</strong> 09 Juillet 2024
+                        </p>
+                        <p class="info">
+                            <strong>Catégorie:</strong> Articles
+                        </p>
+                        <p class="info">
+                            <strong>Auteur:</strong> Yero Bhoye Sow
+                        </p>
+                    </div>
+
+                    <div class="description-card">
+                        <p>
+                        Pour développer votre connaissance de soi, observez et identifiez
+                          vos émotions en tenant un vocabulaire pour les exprimer ; prenez des
+                          décisions en...
+                        </p>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <a href="./nav-pages/cours-contents/messlides/templatesreveal/temp1-pensalgo-concept1.html" target="_blank">
+                        <h3>3 « comments » pour comprendre le concept de Variable en JavaScript </h3>
+                    </a>
+
+                    <div class="infos-card">
+                        <p class="info">
+                            <strong>Publication:</strong> 05 Juillet 2024
+                        </p>
+                        <p class="info">
+                            <strong>Catégorie:</strong> Diapositives
+                        </p>
+                        <p class="info">
+                            <strong>Auteur:</strong> Yero Bhoye Sow
+                        </p>
+                    </div>
+
+                    <div class="description-card">
+                        <p>
+                            let est comme une boîte que vous pouvez remplir et vider à volonté.
+                            const est comme une boîte verrouillée, une fois remplie, elle ne peut pas...
+                        </p>
+                    </div>
+                </div>
+
+                <a href="./nav-pages/cours.html" class="btn light">Voir plus</a>
+            </div>
+        </section>
+
+        <!-- ! End of the courses Section  -->
+
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <div class="links-container">
+                <div class="links">
+                    <h3> Liens rapides</h3>
+
+                    <ul>
+                        <li><a href="#">Qui suis-je</a></li>
+                        <li><a href="#">Mon parcours</a></li>
+                        <li><a href="#">Mon CV</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <h3>Cours</h3>
+
+                    <ul>
+                        <li><a href="#">Tous les Cours</a></li>
+                        <li><a href="#">Playlists Vidéos</a></li>
+                        <li><a href="#">Téléchargement Slides</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <h3>Me suivre</h3>
+                    <div class="social">
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+
+                        </ul>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <p class="copyright">
+                © APPRENDRE & ENSEIGNER 2024
+            </p>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+
 </html>
