@@ -1378,13 +1378,13 @@ main .accordion .accordion-body .courses-section .format-p p {
 }
 main .accordion .accordion-body .courses-section .porfolio-cards .porfolio-card {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   gap: 60px;
   max-height: 450px;
 }
 @media (max-width: 1100px) {
   main .accordion .accordion-body .courses-section .porfolio-cards .porfolio-card {
+    flex-direction: column;
     align-items: center;
     gap: 32px;
     max-height: 950px;
@@ -1401,6 +1401,14 @@ main .accordion .accordion-body .courses-section .porfolio-cards .porfolio-card 
 main .accordion .accordion-body .courses-section .porfolio-cards .porfolio-card .left-card img {
   width: 100%;
   max-height: 90%;
+}
+main .accordion .accordion-body .courses-section .porfolio-cards .porfolio-card .right-card {
+  width: 30%;
+}
+@media (max-width: 1100px) {
+  main .accordion .accordion-body .courses-section .porfolio-cards .porfolio-card .right-card {
+    width: 100%;
+  }
 }
 main .accordion .accordion-body .courses-section .porfolio-cards .porfolio-card .right-card a {
   color: #fff;
