@@ -1294,9 +1294,8 @@ main .wrapper #custom-h2 {
 main .wrapper .body-video,
 main .wrapper .body-podcast {
   margin: 0 auto;
-  width: 80%;
+  width: 85%;
   height: 450px;
-  border: 3px solid yellow;
 }
 @media (max-width: 1100px) {
   main .wrapper .body-video,
