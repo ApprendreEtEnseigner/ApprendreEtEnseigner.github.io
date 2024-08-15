@@ -959,18 +959,18 @@ var IncorrectIndicator = '&#x2718;';
 var YourScoreIs = 'Votre score est:';
 
 //New for 6.2.2.0
-var CompletedSoFar = 'Questions completed so far: ';
+var CompletedSoFar = 'Nombre de r&#x00E9;ponses correctes:';
 var ExerciseCompleted = 'Vous avez compl&#x00E9;t&#x00E9; l\'exercice:';
 var ShowCompletedSoFar = true;
 
-var ContinuousScoring = true;
+var ContinuousScoring = false;
 var CorrectFirstTime = 'Questions correctes dans le temps imparti: ';
 var ShowCorrectFirstTime = true;
 var ShuffleQs = true;
 var ShuffleAs = true;
-var DefaultRight = 'Correct!';
-var DefaultWrong = 'D&#x00E9;sol&#x00E9;, r&#x00E9;essayer!.';
-var QsToShow = 2;
+var DefaultRight = 'R&#x00E9;ponse correcte';
+var DefaultWrong = 'R&#x00E9;ponse incorrecte, passez &#x00E0; la question suivante !';
+var QsToShow = 10;
 var Score = 0;
 var Finished = false;
 var Qs = null;
@@ -1165,10 +1165,74 @@ I[1]=new Array();I[1][0]=100;
 I[1][1]='';
 I[1][2]='0';
 I[1][3]=new Array();
-I[1][3][0]=new Array('Introduction \u00E0 l\u2019informatique, informatique th\u00E9orique, logiciels syst\u00E8mes, informatique, types et structures de donn\u00E9es','Ces concepts sont les fondamentaux de l\u2019informatique qui seront explor\u00E9s avant de passer aux probl\u00E8mes. Ils fournissent les bases n\u00E9cessaires pour comprendre et r\u00E9soudre les probl\u00E8mes en informatique.',1,50,1);
-I[1][3][1]=new Array('Introduction \u00E0 la biologie, biologie th\u00E9orique, logiciels syst\u00E8mes, biologie, types et structures de donn\u00E9es','',0,0,1);
-I[1][3][2]=new Array('Introduction \u00E0 la physique, physique th\u00E9orique, logiciels syst\u00E8mes, physique, types et structures de donn\u00E9es','',0,0,1);
-I[1][3][3]=new Array('Introduction \u00E0 la chimie, chimie th\u00E9orique, logiciels syst\u00E8mes, chimie, types et structures de donn\u00E9es','',0,0,1);
+I[1][3][0]=new Array('Mat\u00E9riel et logiciel','L\u2019informatique englobe tous les aspects des ordinateurs et des concepts informatiques, y compris le mat\u00E9riel (hardware) et le logiciel (software).',1,50,1);
+I[1][3][1]=new Array('Logiciel et r\u00E9seau','',0,0,1);
+I[1][3][2]=new Array('Mat\u00E9riel et r\u00E9seau','',0,0,1);
+I[1][3][3]=new Array('Logiciel et donn\u00E9es','',0,0,1);
+I[2]=new Array();I[2][0]=100;
+I[2][1]='';
+I[2][2]='0';
+I[2][3]=new Array();
+I[2][3][0]=new Array('Conception de jeux, syst\u00E8mes d\u2019exploitation, applications pour appareils mobiles ou de bureau, programmation de robots','L\u2019informatique offre une large gamme de sujets, dont la conception de jeux, les syst\u00E8mes d\u2019exploitation, les applications pour appareils mobiles ou de bureau, et la programmation de robots.',1,100,1);
+I[2][3][1]=new Array('Conception de jeux, syst\u00E8mes d\u2019exploitation, r\u00E9seaux, programmation de robots','',0,0,1);
+I[2][3][2]=new Array('Conception de jeux, r\u00E9seaux, applications pour appareils mobiles ou de bureau, programmation de robots','',0,0,1);
+I[2][3][3]=new Array('R\u00E9seaux, syst\u00E8mes d\u2019exploitation, applications pour appareils mobiles ou de bureau, programmation de robots','',0,0,1);
+I[3]=new Array();I[3][0]=100;
+I[3][1]='';
+I[3][2]='0';
+I[3][3]=new Array();
+I[3][3][0]=new Array('Uniquement le mat\u00E9riel','',0,0,1);
+I[3][3][1]=new Array('Uniquement les logiciels','',0,0,1);
+I[3][3][2]=new Array('Tous les aspects des ordinateurs et des concepts informatiques','Feedback : L\u2019informatique englobe \u00E0 la fois le mat\u00E9riel et les logiciels, ainsi que tous les concepts informatiques. Cela inclut les syst\u00E8mes d\u2019exploitation, les applications et bien plus encore.',1,100,1);
+I[3][3][3]=new Array('Uniquement les syst\u00E8mes d\u2019exploitation','',0,0,1);
+I[4]=new Array();I[4][0]=100;
+I[4][1]='';
+I[4][2]='0';
+I[4][3]=new Array();
+I[4][3][0]=new Array('Byte','',0,0,1);
+I[4][3][1]=new Array('Bit','Un bit, qui signifie \u201Cbinary digit\u201D, est la plus petite unit\u00E9 de donn\u00E9es dans un ordinateur, repr\u00E9sentant un 0 ou un 1.',1,100,1);
+I[4][3][2]=new Array('Kilobyte','',0,0,1);
+I[4][3][3]=new Array('Megabyte','',0,0,1);
+I[5]=new Array();I[5][0]=100;
+I[5][1]='';
+I[5][2]='0';
+I[5][3]=new Array();
+I[5][3][0]=new Array('Syst\u00E8me d\u00E9cimal','',0,0,1);
+I[5][3][1]=new Array('Syst\u00E8me hexad\u00E9cimal','',0,0,1);
+I[5][3][2]=new Array('Syst\u00E8me binaire','Les ordinateurs utilisent le syst\u00E8me binaire, qui est un syst\u00E8me de base-2, pour stocker des informations. Ce syst\u00E8me utilise uniquement les chiffres 0 et 1.',1,100,1);
+I[5][3][3]=new Array('Syst\u00E8me octal','',0,0,1);
+I[6]=new Array();I[6][0]=100;
+I[6][1]='';
+I[6][2]='0';
+I[6][3]=new Array();
+I[6][3][0]=new Array('Conception de mat\u00E9riel','',0,0,1);
+I[6][3][1]=new Array('Conception de logiciels','La conception de logiciels inclut le d\u00E9veloppement de syst\u00E8mes d\u2019exploitation et d\u2019applications, qui sont des aspects cl\u00E9s de l\u2019informatique.',1,100,1);
+I[6][3][2]=new Array('Th\u00E9orie informatique','',0,0,1);
+I[6][3][3]=new Array('R\u00E9seaux informatiques','',0,0,1);
+I[7]=new Array();I[7][0]=100;
+I[7][1]='';
+I[7][2]='0';
+I[7][3]=new Array();
+I[7][3][0]=new Array('Pour concevoir des jeux vid\u00E9o','',0,0,1);
+I[7][3][1]=new Array('Pour comprendre les syst\u00E8mes d\u2019exploitation','',0,0,1);
+I[7][3][2]=new Array('Pour comprendre comment les donn\u00E9es sont stock\u00E9es et manipul\u00E9es','Comprendre le syst\u00E8me binaire est crucial car il permet de comprendre comment les donn\u00E9es sont stock\u00E9es et manipul\u00E9es dans les ordinateurs.',1,100,1);
+I[7][3][3]=new Array('Pour programmer des robots','',0,0,1);
+I[8]=new Array();I[8][0]=100;
+I[8][1]='';
+I[8][2]='0';
+I[8][3]=new Array();
+I[8][3][0]=new Array('2','',0,0,1);
+I[8][3][1]=new Array('10','Dans le syst\u00E8me binaire, apr\u00E8s 1 (ou 01), la prochaine valeur est 10, ce qui \u00E9quivaut \u00E0 2 dans le syst\u00E8me d\u00E9cimal.',1,100,1);
+I[8][3][2]=new Array('11','',0,0,1);
+I[8][3][3]=new Array('01','',0,0,1);
+I[9]=new Array();I[9][0]=100;
+I[9][1]='';
+I[9][2]='0';
+I[9][3]=new Array();
+I[9][3][0]=new Array('45','Pour convertir le nombre binaire 101101 en base-10, chaque chiffre est multipli\u00E9 par la puissance de 2 correspondante et les r\u00E9sultats sont additionn\u00E9s :',1,100,1);
+I[9][3][1]=new Array('46','',0,0,1);
+I[9][3][2]=new Array('44','',0,0,1);
+I[9][3][3]=new Array('43','',0,0,1);
 
 
 function StartUp(){
@@ -1621,7 +1685,7 @@ function DownTime(){
 <div class="Titles">
 	<h2 class="ExerciseTitle">Principes fondamentaux de l&#x2019;informatique</h2>
 
-	<h3 class="ExerciseSubtitle">QCM</h3>
+	<h3 class="ExerciseSubtitle">Type d'exercice: QCM</h3>
 
 
 <div id="Timer"><span id="TimerText">&#160;&#160;</span></div>
@@ -1630,7 +1694,7 @@ function DownTime(){
 </div>
 
 <div id="InstructionsDiv" class="StdDiv">
-	<div id="Instructions">Cliquez sur la bonne r&#x00E9;ponse!</div>
+	<div id="Instructions">Si, au premier essai, vous manquez la r&#x00E9;ponse correcte, passez &#x00E0; la question suivante car seul le premier essai est consid&#x00E9;r&#x00E9;.</div>
 </div>
 
 
@@ -1659,7 +1723,15 @@ function DownTime(){
  
 <ol class="QuizQuestions" id="Questions">
 <li class="QuizQuestion" id="Q_0" style="display: none;"><div class="QuestionText">Qu&#x2019;est-ce que le processus de pens&#x00E9;e computationnelle nous permet de faire ?</div><ol class="MCAnswers"><li id="Q_0_0"><button class="FuncButton" id="Q_0_0_Btn" onclick="CheckMCAnswer(0,0,this)">?</button>&#160;&#160;R&#x00E9;soudre uniquement les probl&#x00E8;mes de math&#x00E9;matiques</li><li id="Q_0_1"><button class="FuncButton" id="Q_0_1_Btn" onclick="CheckMCAnswer(0,1,this)">?</button>&#160;&#160;R&#x00E9;soudre uniquement les probl&#x00E8;mes de programmation</li><li id="Q_0_2"><button class="FuncButton" id="Q_0_2_Btn" onclick="CheckMCAnswer(0,2,this)">?</button>&#160;&#160;R&#x00E9;soudre n&#x2019;importe quel probl&#x00E8;me pr&#x00E9;sent&#x00E9; avec un but et une concentration</li><li id="Q_0_3"><button class="FuncButton" id="Q_0_3_Btn" onclick="CheckMCAnswer(0,3,this)">?</button>&#160;&#160;R&#x00E9;soudre uniquement les probl&#x00E8;mes de physique</li></ol></li>
-<li class="QuizQuestion" id="Q_1" style="display: none;"><div class="QuestionText">Quels sont les concepts importants en informatique que nous explorerons avant de passer aux probl&#x00E8;mes ?</div><ol class="MCAnswers"><li id="Q_1_0"><button class="FuncButton" id="Q_1_0_Btn" onclick="CheckMCAnswer(1,0,this)">?</button>&#160;&#160;Introduction &#x00E0; l&#x2019;informatique, informatique th&#x00E9;orique, logiciels syst&#x00E8;mes, informatique, types et structures de donn&#x00E9;es</li><li id="Q_1_1"><button class="FuncButton" id="Q_1_1_Btn" onclick="CheckMCAnswer(1,1,this)">?</button>&#160;&#160;Introduction &#x00E0; la biologie, biologie th&#x00E9;orique, logiciels syst&#x00E8;mes, biologie, types et structures de donn&#x00E9;es</li><li id="Q_1_2"><button class="FuncButton" id="Q_1_2_Btn" onclick="CheckMCAnswer(1,2,this)">?</button>&#160;&#160;Introduction &#x00E0; la physique, physique th&#x00E9;orique, logiciels syst&#x00E8;mes, physique, types et structures de donn&#x00E9;es</li><li id="Q_1_3"><button class="FuncButton" id="Q_1_3_Btn" onclick="CheckMCAnswer(1,3,this)">?</button>&#160;&#160;Introduction &#x00E0; la chimie, chimie th&#x00E9;orique, logiciels syst&#x00E8;mes, chimie, types et structures de donn&#x00E9;es</li></ol></li></ol>
+<li class="QuizQuestion" id="Q_1" style="display: none;"><div class="QuestionText">Quels sont les deux aspects principaux de l&#x2019;informatique ?</div><ol class="MCAnswers"><li id="Q_1_0"><button class="FuncButton" id="Q_1_0_Btn" onclick="CheckMCAnswer(1,0,this)">?</button>&#160;&#160;Mat&#x00E9;riel et logiciel</li><li id="Q_1_1"><button class="FuncButton" id="Q_1_1_Btn" onclick="CheckMCAnswer(1,1,this)">?</button>&#160;&#160;Logiciel et r&#x00E9;seau</li><li id="Q_1_2"><button class="FuncButton" id="Q_1_2_Btn" onclick="CheckMCAnswer(1,2,this)">?</button>&#160;&#160;Mat&#x00E9;riel et r&#x00E9;seau</li><li id="Q_1_3"><button class="FuncButton" id="Q_1_3_Btn" onclick="CheckMCAnswer(1,3,this)">?</button>&#160;&#160;Logiciel et donn&#x00E9;es</li></ol></li>
+<li class="QuizQuestion" id="Q_2" style="display: none;"><div class="QuestionText">Quels sont certains des sujets disponibles en informatique ?</div><ol class="MCAnswers"><li id="Q_2_0"><button class="FuncButton" id="Q_2_0_Btn" onclick="CheckMCAnswer(2,0,this)">?</button>&#160;&#160;Conception de jeux, syst&#x00E8;mes d&#x2019;exploitation, applications pour appareils mobiles ou de bureau, programmation de robots</li><li id="Q_2_1"><button class="FuncButton" id="Q_2_1_Btn" onclick="CheckMCAnswer(2,1,this)">?</button>&#160;&#160;Conception de jeux, syst&#x00E8;mes d&#x2019;exploitation, r&#x00E9;seaux, programmation de robots</li><li id="Q_2_2"><button class="FuncButton" id="Q_2_2_Btn" onclick="CheckMCAnswer(2,2,this)">?</button>&#160;&#160;Conception de jeux, r&#x00E9;seaux, applications pour appareils mobiles ou de bureau, programmation de robots</li><li id="Q_2_3"><button class="FuncButton" id="Q_2_3_Btn" onclick="CheckMCAnswer(2,3,this)">?</button>&#160;&#160;R&#x00E9;seaux, syst&#x00E8;mes d&#x2019;exploitation, applications pour appareils mobiles ou de bureau, programmation de robots</li></ol></li>
+<li class="QuizQuestion" id="Q_3" style="display: none;"><div class="QuestionText">Qu&#x2019;est-ce que l&#x2019;informatique englobe ? </div><ol class="MCAnswers"><li id="Q_3_0"><button class="FuncButton" id="Q_3_0_Btn" onclick="CheckMCAnswer(3,0,this)">?</button>&#160;&#160;Uniquement le mat&#x00E9;riel</li><li id="Q_3_1"><button class="FuncButton" id="Q_3_1_Btn" onclick="CheckMCAnswer(3,1,this)">?</button>&#160;&#160;Uniquement les logiciels</li><li id="Q_3_2"><button class="FuncButton" id="Q_3_2_Btn" onclick="CheckMCAnswer(3,2,this)">?</button>&#160;&#160;Tous les aspects des ordinateurs et des concepts informatiques</li><li id="Q_3_3"><button class="FuncButton" id="Q_3_3_Btn" onclick="CheckMCAnswer(3,3,this)">?</button>&#160;&#160;Uniquement les syst&#x00E8;mes d&#x2019;exploitation</li></ol></li>
+<li class="QuizQuestion" id="Q_4" style="display: none;"><div class="QuestionText">Quel est le plus petit &#x00E9;l&#x00E9;ment de donn&#x00E9;es dans un ordinateur ? </div><ol class="MCAnswers"><li id="Q_4_0"><button class="FuncButton" id="Q_4_0_Btn" onclick="CheckMCAnswer(4,0,this)">?</button>&#160;&#160;Byte</li><li id="Q_4_1"><button class="FuncButton" id="Q_4_1_Btn" onclick="CheckMCAnswer(4,1,this)">?</button>&#160;&#160;Bit</li><li id="Q_4_2"><button class="FuncButton" id="Q_4_2_Btn" onclick="CheckMCAnswer(4,2,this)">?</button>&#160;&#160;Kilobyte</li><li id="Q_4_3"><button class="FuncButton" id="Q_4_3_Btn" onclick="CheckMCAnswer(4,3,this)">?</button>&#160;&#160;Megabyte</li></ol></li>
+<li class="QuizQuestion" id="Q_5" style="display: none;"><div class="QuestionText">Quel syst&#x00E8;me de num&#x00E9;ration est utilis&#x00E9; par les ordinateurs pour stocker des informations ? </div><ol class="MCAnswers"><li id="Q_5_0"><button class="FuncButton" id="Q_5_0_Btn" onclick="CheckMCAnswer(5,0,this)">?</button>&#160;&#160;Syst&#x00E8;me d&#x00E9;cimal</li><li id="Q_5_1"><button class="FuncButton" id="Q_5_1_Btn" onclick="CheckMCAnswer(5,1,this)">?</button>&#160;&#160;Syst&#x00E8;me hexad&#x00E9;cimal</li><li id="Q_5_2"><button class="FuncButton" id="Q_5_2_Btn" onclick="CheckMCAnswer(5,2,this)">?</button>&#160;&#160;Syst&#x00E8;me binaire</li><li id="Q_5_3"><button class="FuncButton" id="Q_5_3_Btn" onclick="CheckMCAnswer(5,3,this)">?</button>&#160;&#160;Syst&#x00E8;me octal</li></ol></li>
+<li class="QuizQuestion" id="Q_6" style="display: none;"><div class="QuestionText">Quel domaine de l&#x2019;informatique se concentre principalement sur les syst&#x00E8;mes d&#x2019;exploitation et les applications ? </div><ol class="MCAnswers"><li id="Q_6_0"><button class="FuncButton" id="Q_6_0_Btn" onclick="CheckMCAnswer(6,0,this)">?</button>&#160;&#160;Conception de mat&#x00E9;riel</li><li id="Q_6_1"><button class="FuncButton" id="Q_6_1_Btn" onclick="CheckMCAnswer(6,1,this)">?</button>&#160;&#160;Conception de logiciels</li><li id="Q_6_2"><button class="FuncButton" id="Q_6_2_Btn" onclick="CheckMCAnswer(6,2,this)">?</button>&#160;&#160;Th&#x00E9;orie informatique</li><li id="Q_6_3"><button class="FuncButton" id="Q_6_3_Btn" onclick="CheckMCAnswer(6,3,this)">?</button>&#160;&#160;R&#x00E9;seaux informatiques</li></ol></li>
+<li class="QuizQuestion" id="Q_7" style="display: none;"><div class="QuestionText">Pourquoi est-il important de comprendre le syst&#x00E8;me binaire en informatique ? </div><ol class="MCAnswers"><li id="Q_7_0"><button class="FuncButton" id="Q_7_0_Btn" onclick="CheckMCAnswer(7,0,this)">?</button>&#160;&#160;Pour concevoir des jeux vid&#x00E9;o</li><li id="Q_7_1"><button class="FuncButton" id="Q_7_1_Btn" onclick="CheckMCAnswer(7,1,this)">?</button>&#160;&#160;Pour comprendre les syst&#x00E8;mes d&#x2019;exploitation</li><li id="Q_7_2"><button class="FuncButton" id="Q_7_2_Btn" onclick="CheckMCAnswer(7,2,this)">?</button>&#160;&#160;Pour comprendre comment les donn&#x00E9;es sont stock&#x00E9;es et manipul&#x00E9;es</li><li id="Q_7_3"><button class="FuncButton" id="Q_7_3_Btn" onclick="CheckMCAnswer(7,3,this)">?</button>&#160;&#160;Pour programmer des robots</li></ol></li>
+<li class="QuizQuestion" id="Q_8" style="display: none;"><div class="QuestionText">Quelle est la prochaine valeur apr&#x00E8;s 1 dans le syst&#x00E8;me binaire ? </div><ol class="MCAnswers"><li id="Q_8_0"><button class="FuncButton" id="Q_8_0_Btn" onclick="CheckMCAnswer(8,0,this)">?</button>&#160;&#160;2</li><li id="Q_8_1"><button class="FuncButton" id="Q_8_1_Btn" onclick="CheckMCAnswer(8,1,this)">?</button>&#160;&#160;10</li><li id="Q_8_2"><button class="FuncButton" id="Q_8_2_Btn" onclick="CheckMCAnswer(8,2,this)">?</button>&#160;&#160;11</li><li id="Q_8_3"><button class="FuncButton" id="Q_8_3_Btn" onclick="CheckMCAnswer(8,3,this)">?</button>&#160;&#160;01</li></ol></li>
+<li class="QuizQuestion" id="Q_9" style="display: none;"><div class="QuestionText">Quelle est la valeur d&#x00E9;cimale du nombre binaire 101101 ? </div><ol class="MCAnswers"><li id="Q_9_0"><button class="FuncButton" id="Q_9_0_Btn" onclick="CheckMCAnswer(9,0,this)">?</button>&#160;&#160;45</li><li id="Q_9_1"><button class="FuncButton" id="Q_9_1_Btn" onclick="CheckMCAnswer(9,1,this)">?</button>&#160;&#160;46</li><li id="Q_9_2"><button class="FuncButton" id="Q_9_2_Btn" onclick="CheckMCAnswer(9,2,this)">?</button>&#160;&#160;44</li><li id="Q_9_3"><button class="FuncButton" id="Q_9_3_Btn" onclick="CheckMCAnswer(9,3,this)">?</button>&#160;&#160;43</li></ol></li></ol>
 
 
 
