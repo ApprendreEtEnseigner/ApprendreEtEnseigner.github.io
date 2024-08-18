@@ -1,0 +1,60 @@
+/*LES COLONNES 
+.div-txt-g{
+	padding:5% 8% 5% 8%;
+	
+}
+*/
+
+.div-txt-c, .div-txt-g{
+	line-height: 30px;
+	
+	
+}
+
+.chap-left{
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.836);
+	
+}
+@media screen and (max-width: 680px){
+	.chap-left{
+		margin: 20%;
+	}
+}
+.margin-top{
+	margin-top: 0%;
+}
+
+.illustration-left{
+	border: 1px solid royalblue;
+	width: 120px;
+	height: 192px;
+	
+}
+
+.description-right{
+	border: 1px solid black;
+	margin-left: 10px;
+	height: 192px;
+}
+
+
+.div-txt-c{
+	padding:5% 8% 5% 8%;
+	}
+
+@media screen and (max-width: 680px){
+	.illustration-left{
+		display: none;
+		
+	}
+
+	.description-right{
+		border: 1px solid black;
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-bottom: 20px;
+		height: inherit;
+	}
+}
+

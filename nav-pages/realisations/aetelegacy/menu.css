@@ -1,0 +1,409 @@
+/* Reset CSS*/
+
+body{
+	font-family: verdana, "sens-serif", Georgia, serif;
+	margin: 0px;
+	padding: 0px;
+}
+/* Reset CSS*/
+nav > ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+.imglogoEntete{
+	float: left;
+	padding: 5px;
+}
+
+/* Rendre nos list flottant 
+	les positionner de facon relative (but= permettre les sous-onglets de se positionner tres bien)
+*/
+nav > ul > li{
+	float: left;
+	position: relative;	
+}
+
+/* But=> restituer hateur perdue de l'element parent, car les ele. fils sont flottants*/
+nav > ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav{
+	width: 100%;
+	background-color: #334257;
+	clear: both;
+	
+}
+
+nav li{
+	list-style-type: none;
+}
+
+/* masquer le LABEL*/
+.menu-mobile{
+	display: none;
+}
+
+
+.imglogoEntete-responsive{
+	display: none;
+}
+
+
+/* masquer le CHECKBOX*/
+nav input[type=checkbox]{
+	display: none;
+}
+
+.txt-entete-responsive{
+		display: none;
+	}
+
+.div-responsive{
+		display: none;
+		}
+
+/* afficher le menu lorsque la case est cochee*/
+nav input[type=checkbox]:checked ~ ul{
+	display: block;
+	
+} 
+
+.txt-yero{
+	float: left;
+	padding: 10px;
+	margin: 5px;
+
+}
+
+.txt-joubert{
+	float: right;
+	margin-right: 15px;
+	
+	
+}
+
+.txt-droite{
+	float: right;
+}
+
+
+/* Lorsque la largeur max est 680px, 
+	afficher le LABEL et le CHECKBOX
+	cacher le menu
+	elargir les list et les liens du menu
+	augmenter les marigins interieur, si user survol curseur sur les liens et les listes du menu
+	elargir les sous-onglets et position statique si user survol curseur sur les listes du menu
+	*/
+@media screen and (max-width: 680px){
+	.menu-mobile{
+		display: block;
+		color: #fff;
+		background-color: rgba(51, 66, 87, 0.7);
+		text-align: center;
+		padding: 12px 0px;
+		
+
+		}
+	
+	.imglogoEntete-responsive{
+		display: inline;
+		margin-left: 30%;
+		margin-right: 30%;
+		padding-top: 10px;
+		
+	}
+
+	.div-responsive{
+		display: inline;
+		
+	}
+
+	.txt-entete-responsive{
+		display: block;
+		margin: 0px auto;
+		text-align: center;
+		padding-bottom: 5px;
+	}
+
+	.imglogoEntete{
+		display: none;
+	}
+
+	.txt-joubert{
+	display: none;
+	}
+
+	nav ul{
+		display: none;
+		overflow: hidden;
+	}
+	
+	
+	nav > ul > li, nav ul li a{
+	
+	width: 100%;
+	text-align: center;
+	}
+	
+	nav ul li a, nav ul li:hover a{
+		padding: 10px 0px 10px 0px;
+	}
+	
+	nav ul li:hover .submenu{
+		display: block;
+		position: static;
+	}
+	
+	.contenneur-g > .col-g{
+	display: none;
+	
+	}
+	
+	.contenneur-c >.contenneur-g{
+	background-color: #EBECEC;
+	}
+	
+	.contenneur-g > .col-c{
+	width: 100%;
+	}
+
+}
+
+
+/* cacher les sous-onglets*/
+.submenu{
+	display: none;
+}
+
+/* Lorsque user survol curseur sur listes des onglets,
+	afficher sous onglets
+	positionner relativement par rapport auonglets (rapplez-vs de la position relative donnee au onglets
+	z-index, pour s'afficher au dessus*/
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 101%;
+	left: 0px;
+	padding: 0px;
+	margin: 0px;
+	z-index: 100000;	
+}
+
+
+.submenu li{
+	border-bottom: 1px solid #ccc;
+}
+
+.submenu li a{
+	padding: 15px 30px;
+	font-size: 13px;
+	color: #EBECEC;
+	width: 270px;
+}
+
+.menu-cours .submenu{
+	background-color: #476072;
+}
+
+.menu-ressources .submenu{
+	background-color: #476072;
+}
+
+.menu-livre .submenu{
+	background-color: #476072;
+}
+
+.menu-devperso .submenu{
+	background-color: #476072;
+}
+
+.menu-qui-sje .submenu{
+	background-color: #476072;
+}
+
+
+/* Lorsque user survol curseur sur sous onglets,
+	liens sont ...*/
+.submenu li:hover a{
+	color: #111;
+	font-weight: bold;
+}
+
+
+.menu-cours .submenu li:hover{
+	background-color: #548ca8;
+}
+
+.menu-livre .submenu li:hover{
+	background-color: #548ca8;
+}
+
+.menu-ressources .submenu li:hover{
+	background-color: #548ca8;
+}
+
+.menu-devperso .submenu li:hover{
+	background-color: #548ca8;
+	
+}
+
+.menu-qui-sje .submenu li:hover{
+	background-color: #548ca8;
+	
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	
+}
+
+nav > ul > li > a{
+	padding: 20px 30px;
+	color: #FFF;
+}
+
+nav > ul > li:hover  a{
+	padding: 15px 30px 15px 30px;
+}
+
+.menu-cours:hover{
+	border-top: 5px solid #53B8BB;
+	background-color: RGBa(00, 36, 38, 0.5);
+}
+.menu-cours2:hover{
+	border-top: 5px solid #53B8BB;
+	background-color: RGBa(00, 36, 38, 0.5);
+}
+
+.menu-livre:hover{
+	border-top: 5px solid #53B8BB;
+	background-color: RGBa(00, 36, 38, 0.5);
+}
+
+.menu-ressources:hover{
+	border-top: 5px solid #53B8BB;
+	background-color: RGBa(00, 36, 38, 0.5);
+}
+
+.menu-devperso:hover{
+	border-top: 5px solid #53B8BB;
+	background-color: RGBa(00, 36, 38, 0.5);
+}
+
+.menu-qui-sje:hover{
+	border-top: 5px solid #53B8BB;
+	background-color: RGBa(00, 36, 38, 0.5);
+}
+
+/* CONTENU DE LA PAGE MENU OU ACCUEIL */
+.contenneur-g, .contenneur-d, .contenneur-c{
+	float: left;
+	width: 100%;
+}
+
+.contenneur-g{
+	
+	position: relative;
+	right: 0%;
+}
+
+.me-regler{
+	text-align: center;
+	
+}
+
+.contenneur-c{
+	background-color: #EBECEC;
+	position: relative;
+	right: 0%;
+	
+}
+
+
+/*LES COLONNES */
+.col-c{
+	float: left;
+	
+}
+
+
+.col-c{
+	width: 100%;
+	/*background-color: rgba(110, 144, 240, 1.7);*/
+}
+.accroche {
+	/* font-size: 1.8em; */
+	width: 100%;
+
+}
+.for-teach {
+	margin-left: 100px;
+}
+.response{
+	width: 100%;
+	text-align: left;
+}
+
+.response p, .copy-contents .content-body p {
+	width: 100%;
+	font-size: 1.2em;
+	line-height: 30px;
+	text-align: left;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.promo-video p, .skills, .copy-contents .content-title {
+	width: 100%;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.body-video {
+	padding-bottom: 80px;
+}
+.copy-ressources {
+	width: 100%;
+}
+.copy-contents {
+	box-shadow: -1px 7px 16px 2px rgba(0, 0, 0, 0.59);
+	border-radius: 15px 15px 15px 15px;
+	width: 80%;
+	margin: 40px auto 50px auto;
+	padding: 10px 30px;
+}
+.copy-contents:hover {
+    transform: scale(1.02);
+	transition: 0.3s ease-in-out;
+}
+.copy-contents p, a {
+	text-decoration: none;
+	color: #000;
+	font-weight: normal;
+}
+
+/* MISE EN FORME PIED PAGE */
+.pied{
+	float: left;
+	width: 100%;
+	background-color: #548CA8;
+	padding: 15px 0px 15px 0px;
+}
+
+.pied p{
+	text-align: center;
+	font-size: 1em;
+	color: whitesmoke;
+}
+
+
+
+

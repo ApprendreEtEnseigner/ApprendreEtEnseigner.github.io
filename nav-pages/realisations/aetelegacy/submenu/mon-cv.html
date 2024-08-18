@@ -1,0 +1,105 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+			<!-- ceci permet de gerer la partie RESPONSIVE-->
+		<meta name="viewport" content="width-device-width, initial-scale=1">
+			<!-- ceci permet de gerer la partie REFERENCEMENT-->
+		<meta name="description" content="Bienvenue sur le site de Yero Bhoye SOW">
+		<link rel="stylesheet" href="menu.css">
+		<link rel="stylesheet" href="contenu.css">
+		<link rel="stylesheet" href="contenu-article.css">
+		<title>mon cv</title>
+	</head>
+	
+	<body>
+				<!-- ceci est l'entete de ma page-->
+		<header>
+			<div class="div-responsive">
+				<a href="#"><img src="AETE.png" alt="logo-entete" class="imglogoEntete-responsive"></a>
+				<h2 class="txt-entete-responsive"> Apprendre-et-Enseigner </h2>
+			</div>
+			<div>
+				<a href="#"><img src="logo-entete.jpg" alt="logo-entete" class="imglogoEntete"></a>
+				<h3 class="txt-joubert"> « Enseigner, c’est apprendre deux fois. » 
+				<br><div class="txt-droite"> J. Joubert </div></h3>
+			</div>
+		</header>
+				<!-- ceci est le MENU DE NAVIGATION -->
+		<nav>
+			<!-- ceci permet de gerer la partie RESPONSIVE-->
+			<label for="menu-mobile" class="menu-mobile">Afficher le Menu</label>
+			<input type="checkbox" id="menu-mobile" role="button">
+			<ul>
+				<li class="menu-cours"><a href="../index.html">Accueil</a></li>
+				<li class="menu-cours"><a href="#">Cours</a>
+					<ul   class="submenu">
+						<li><a href="cours-article.html">Tutoriels</a></li>
+						<li><a href="cours-video.html">Vidéos</a></li>
+						<li><a href="cours-audio.html">Audios</a></li>
+					</ul>
+				</li>
+				<li class="menu-ressources"><a href="#">Réssources</a>
+					<ul  class="submenu">
+						<li><a href="cours-pdf.html">Livres</a></li>
+						<li><a href="exercice-pdf.html">Exercices</a></li>
+						<li><a href="divers.html">Divers</a></li>
+					</ul>
+				</li>
+				<li class="menu-livre"><a href="#">Tribune</a>
+					<ul  class="submenu">
+						<li><a href="livre-audio.html">Audios</a></li>
+						<li><a href="livre-pdf.html">Vidéos</a></li>
+						<li><a href="autre.html">Trucs et Astuces</a></li>
+					</ul>
+				</li>
+				<li class="menu-devperso"><a href="#">Personnalité</a>
+					<ul class="submenu">
+						<li><a href="devperso-livre-audio.html">Vidéos</a></li>
+						<li><a href="carte-mentale.html">Audios</a></li>
+						<li><a href="devperso-trucs-astuces.html">Carte mentale</a></li>
+					</ul>
+				</li>
+				<li class="menu-qui-sje"><a href="#">Qui suis-je</a>
+					<ul class="submenu">
+						<li><a href="mes-realisations.html">Mes Réalisations</a></li>
+						<li><a href="mon-cv.html">Mon CV</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		
+				<!-- ceci est Le CONTENU DE LA PAGE-->
+		<section>
+				<!-- NB les contenneurs but = avoir une hauteur dynamique 
+				inverser les conteneur ie contenneur d/c/g 
+				Pour que le cont. g soit en premiere position sur navigateur
+				-->
+			<div class="contenneur-d">
+			
+				<div class="contenneur-c">
+					<div class="contenneur-g">
+						<div class="col-g">
+							
+						</div>
+						<div class="col-c">
+							<div class="div-txt-c">
+								<h2>Mon CV</h2>
+								<h3>
+									Cliquez<a href="../yero-bhoye-sow-cv.pdf" target="_blank"> ici </a> pour télécharger mon cv
+							    </h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+				<!-- ceci est le PIED DE PAGE-->
+		<footer>
+			<div class="pied">
+				<p> Copyright 2021 Yéro Bhoye Sow- Toute réproduction interdite. </p>
+			</div>
+		</footer>
+	</body>
+</html>

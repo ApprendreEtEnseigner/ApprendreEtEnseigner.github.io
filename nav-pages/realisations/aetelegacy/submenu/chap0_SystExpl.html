@@ -1,0 +1,378 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+			<!-- ceci permet de gerer la partie RESPONSIVE-->
+		<meta name="viewport" content="width-device-width, initial-scale=1">
+			<!-- ceci permet de gerer la partie REFERENCEMENT-->
+		<meta name="description" content="Bienvenue sur le site de Yero Bhoye SOW">
+		<link rel="stylesheet" href="menu.css">
+		<link rel="stylesheet" href="contenu.css">
+		<title>Chapitre 0</title>
+	</head>
+	
+	<body>
+				<!-- ceci est l'entete de ma page-->
+		<header>
+			<div class="div-responsive">
+				<a href="#"><img src="AETE.png" alt="logo-entete" class="imglogoEntete-responsive"></a>
+				<h2 class="txt-entete-responsive"> Apprendre-et-Enseigner </h2>
+			</div>
+			<div>
+				<a href="#"><img src="logo-entete.jpg" alt="logo-entete" class="imglogoEntete"></a>
+				<h3 class="txt-joubert"> « Enseigner, c’est apprendre deux fois. » 
+				<br><div class="txt-droite"> J. Joubert </div></h3>
+			</div>
+		</header>
+				<!-- ceci est le MENU DE NAVIGATION -->
+		<nav>
+			<!-- ceci permet de gerer la partie RESPONSIVE-->
+			<label for="menu-mobile" class="menu-mobile">Afficher le Menu</label>
+			<input type="checkbox" id="menu-mobile" role="button">
+			<ul>
+				<li class="menu-cours"><a href="../index.html">Accueil</a></li>
+				<li class="menu-cours"><a href="#">Cours</a>
+					<ul   class="submenu">
+						<li><a href="cours-article.html">Tutoriels</a></li>
+						<li><a href="cours-video.html">Vidéos</a></li>
+						<li><a href="cours-audio.html">Audios</a></li>
+					</ul>
+				</li>
+				<li class="menu-ressources"><a href="#">Réssources</a>
+					<ul  class="submenu">
+						<li><a href="cours-pdf.html">Livres</a></li>
+						<li><a href="exercice-pdf.html">Exercices</a></li>
+						<li><a href="divers.html">Divers</a></li>
+					</ul>
+				</li>
+				<li class="menu-livre"><a href="#">Tribune</a>
+					<ul  class="submenu">
+						<li><a href="livre-audio.html">Audios</a></li>
+						<li><a href="livre-pdf.html">Vidéos</a></li>
+						<li><a href="autre.html">Trucs et Astuces</a></li>
+					</ul>
+				</li>
+				<li class="menu-devperso"><a href="#">Personnalité</a>
+					<ul class="submenu">
+						<li><a href="devperso-livre-audio.html">Vidéos</a></li>
+						<li><a href="carte-mentale.html">Audios</a></li>
+						<li><a href="devperso-trucs-astuces.html">Carte mentale</a></li>
+					</ul>
+				</li>
+				<li class="menu-qui-sje"><a href="#">Qui suis-je</a>
+					<ul class="submenu">
+						<li><a href="mes-realisations.html">Mes Réalisations</a></li>
+						<li><a href="mon-cv.html">Mon CV</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		
+				<!-- ceci est Le CONTENU DE LA PAGE-->
+		<section>
+				<!-- NB les contenneurs but = avoir une hauteur dynamique 
+				inverser les conteneur ie contenneur d/c/g 
+				Pour que le cont. g soit en premiere position sur navigateur
+				-->
+			<div class="contenneur-d">
+			
+				<div class="contenneur-c">
+					<div class="contenneur-g">
+						<div class="col-c">
+						
+							<div class="div-txt-c" id="div-txt-responsive-article">
+								<P class="MJ_Contenu">Mis à jour le 07/09/2022</p>
+									<h1>Le système d'exploitation, présentation des notions fondamentales.</h1>
+									<hr>
+								<h2>1. Système d'exploitation, qui ne sait pas ça encore ?</h2>
+								<p>
+									Aujourd’hui chacun a entendu parler de Windows, peut-être moins de MacOS
+(le système du Macintosh), et chaque jour un peu plus de Linux, grâce auquel l’auteur confectionne les lignes que vous avez sous les yeux. Ces entités quotidiennes
+s’appellent des systèmes d’exploitation.
+								</p>
+
+								<p>
+									Le présent article se propose d’apporter, au gré d’un voyage dans l’histoire de
+l’informatique, quelques éclaircissements sur les systèmes d’exploitation à un lecteur
+qui ainsi devrait se sentir moins désarmé face à eux. Il présente quelques
+aspects de leur nature, de leur naissance et de leur histoire.
+								</p>
+
+								<P class="my_exclammation">
+									Cet article n’est pas un article technique sur les systèmes d’exploitation, il
+s’adresse au lecteur curieux d’histoire des sciences, des techniques et plus généralement de la vie intellectuelle, ainsi qu’au simple utilisateur d’ordinateur désireux
+de comprendre un peu mieux l’origine des difficultés mais aussi, nous l’espérons,
+des joies que lui procure cette extraordinaire machine.
+								</P>
+
+								<h2>2. Quelques définitions</h2>
+								 <p>
+									Un <span > système d’exploitation</span> est un logiciel destiné à faciliter l’utilisation d’un ordinateur (je sais que cette assertion sera pour certains lecteurs une véritable provocation). L’ordinateur constitue le matériel composé de fils, circuits, etc., inutilisable
+sans le logiciel constitué de programmes.
+								 </p>
+
+								 <p>
+									Un <span>ordinateur</span> est un automate capable d’effectuer des actions
+dites primitives (c’est-à-dire déterminées par ses concepteurs, et que nous nommerons désormais « primitives » tout court), de les enchaîner dans l’ordre voulu, de
+les répéter et surtout de choisir, en fonction du résultat des actions précédentes, la
+prochaine action à effectuer entre deux ou plusieurs possibilités connues à l’avance.
+								 </p>
+								 <p class="my_exclammation">
+									Nous pouvons aussi dire les choses de la façon suivante : un ordinateur est une
+machine qui a des états discrets. Ces états sont enregistrés dans un dispositif appelé
+mémoire. Rédiger un programme pour un ordinateur, c’est décrire la séquence de ses états successifs qui vont permettre d’obtenir le résultat voulu. Le programme
+enchaîne les actions primitives qui vont affecter la mémoire pour instaurer les états
+voulus successivement. Un ordinateur est un automate à états fini.
+								 </p>
+
+								 <p>
+									Les trois caractéristiques fondamentales d’un ordinateur sont qu’il est programmable, automatique et universel :
+— programmable : la nature des opérations à effectuer peut être spécifiée complètement et exclusivement par le texte d’un programme ;
+— automatique : une fois lancée l’exécution d’un programme, l’ordinateur assure
+cette exécution sans intervention extérieure ;
+— universel : capable d’exécuter n’importe quel programme, c’est-à-dire tout enchaînement d’actions primitives décrivant une procédure effective pour obtenir le résultat voulu. Une procédure effective est l’enchaînement d’opérations
+élémentaires qui permettront d’exécuter les calculs nécessaires à la solution
+de problèmes pour lesquels existent des solutions calculables
+								 </p>
+								 <p class="my_exclammation_blue">
+									si le programme lancé au démarrage de l’ordinateur est un système
+d’exploitation, conçu comme dit ci-dessus pour déclencher l’exécution d’autres programmes, qui sont ainsi en quelque sorte des sous-programmes du système d’exploitation, les exécutions de programmes différents pourront s’enchaîner. Nous y
+reviendrons.
+								 </p>
+
+								 <p class="my_exclammation_red">
+									Contrairement aux logiciels d’application, tels que traitement de texte, programme financier ou de jeu, le système d’exploitation ne sert pas à une tâche particulière, mais il est dans la coulisse de toutes. Dans la coulisse, c’est-à-dire que
+l’utilisateur peut ignorer jusqu’à son existence, et d’ailleurs cette ignorance est sans
+doute à mettre à son actif. Beaucoup d’utilisateurs de Macintosh ne savent rien de
+MacOS, et c’est la preuve que MacOS remplit sa mission sans faille. Quand le système d’exploitation (on peut dire simplement système) se manifeste, souvent c’est
+pour signaler que quelque chose ne va pas.
+								 </p>
+
+								 <h2>
+									3. Quelle est la couche  visible du système d'exploitation ?
+								 </h2>
+
+								 <p>
+									Pour l’utilisateur d’un micro-ordinateur, l’aspect le plus apparent (et souvent le
+seul perceptible) du système d’exploitation, ce sont les différents objets graphiques
+qui s’exhibent sur l’écran : les fenêtres dans lesquelles s’affichent des textes ou des
+images, les différentes barres et poignées qui servent à déplacer les fenêtres ou à
+en modifier les dimensions avec la souris, les barres de défilement qui permettent
+de faire défiler le contenu visible dans une fenêtre, les icônes sur lesquels on peut
+« cliquer » pour lancer l’exécution de tel ou tel programme, les menus qui proposent
+un choix de fonctions à exécuter, telles qu’imprimer le contenu d’une fenêtre ou...
+arrêter l’ordinateur. Cet aspect visible du système d’exploitation sert essentiellement à ouvrir, présenter et gérer des fenêtres et objets graphiques analogues : nous
+pouvons l’appeler gestionnaire de fenêtres ou interface utilisateur graphique (GUI,
+pour Graphical User Interface).
+								 </p>
+
+								 <p>
+									Mais au-delà de cet aspect immédiat, dont beaucoup de gens croient qu’il constitue le tout du système, il y a encore beaucoup de choses qu’un système d’exploitation
+fait pour son utilisateur. Nous avons dit que le système d’exploitation servait d’intermédiaire, si possible facilitateur, entre l’utilisateur et l’ordinateur. Dans cette
+optique, le gestionnaire de fenêtres est la partie la plus tournée vers l’utilisateur,
+l’aspect le plus superficiel du système (ici le mot superficiel ne dénote pas un jugement de valeur, mais qualifie ce qui est à la surface visible, par opposition à ce qui est
+enfoui dans la profondeur des entrailles de la machine). Cette partie qui est en surface, directement accessible à la perception, nous pourrons l’appeler interface (entre
+la personne et l’ordinateur). Nous dirons que c’est une interface de haut niveau, non
+pas là encore par un jugement de valeur, mais parce qu’elle donne de l’ordinateur
+et de son fonctionnement une représentation très idéalisée, très métaphorique, en
+un mot très abstraite par rapport à ce que serait une interface de bas niveau, plus
+proche de l’ordinateur et moins parlante aux humains.
+								 </p>
+								 <h3>Une représentation : le modèle en couches</h3>
+
+								 <p>
+									À l’autre extrémité du système d’exploitation, si j’ose dire, du côté de l’ordinateur, de ses circuits et de ses transistors, sont les programmes qui interagissent
+directement avec les éléments matériels de l’ordinateur. Ces parties du système
+constituent ce qui est souvent appelé le noyau (kernel). Entre le noyau et l’interface
+utilisateur, il y a toute une série de couches intermédiaires qui distillent les messages
+cryptiques du matériel pour délivrer à l’utilisateur une information compréhensible.
+Les informaticiens utilisent communément cette représentation par une architecture
+en couches imaginée par le chercheur néerlandais Edsger Wybe Dijkstra (1930–2002)
+dans un article fameux publié en mai 1968 par les CACM (Communications of the
+Association for Computer Machinery), « The structure of the THE multiprogramming system ».
+
+								 </p>
+
+								 <p>
+									Avant d’être le plan de construction du système concret, l’architecture en couches
+est un modèle destiné à se représenter intellectuellement les choses par des abstractions. Ce modèle est utile pour « penser un objet dans lequel plusieurs logiques
+s’articulent » (Michel Volle, http://www.volle.com/opinion/couches.htm), lorsqu’il faut séparer différents niveaux d’abstraction. On nommera couches basses les
+parties du système qui interagissent le plus directement avec le matériel de l’ordinateur, et couches hautes celles qui sont plus proches de l’utilisateur. Il n’y a là
+encore aucun jugement de valeur implicite dans ces expressions « couches basses » et
+« couches hautes ». Et la réalisation des couches basses est sans doute techniquement
+plus complexe, demande des compétences plus rares que celle des couches hautes,
+cependant que ces dernières exigent, outre des compétences techniques, des talents
+artistiques et une imagination digne d’un urbaniste.
+								 </p>
+
+								 <p>
+									Encore plus que dans le monde des systèmes d’exploitation, le modèle en couches
+a connu le succès dans celui des réseaux informatiques, où les couches basses décrivent la transmission de signaux sur des supports physiques tels que câble téléphonique, faisceau hertzien ou fibre optique, tandis que les couches intermédiaires
+concernent l’acheminement de messages complexes à travers des réseaux à la topologie également complexe, et que les couches hautes traitent de la présentation
+de ces messages à travers une interface utilisateur, de l’identification de leur
+destinataire et de son authentification (ces derniers problèmes sont également traités
+par les systèmes d’exploitation, soit dit en passant). Les ensembles de règles et de
+conventions qui régissent les communications entre les couches de même niveau de
+plusieurs systèmes communicants constituent des protocoles de communication. Les
+règles et les conventions qui régissent les échanges entre une couche donnée et la
+couche immédiatement inférieure d’un même système constituent une interface.
+								 </p>
+
+								 <h2>L’informatique est (aussi) une science ?</h2>
+								 <p>
+									Compléter les définitions ci-dessus par un plan d’ensemble de la discipline informatique n’est peut-être pas si futile qu’il y paraît et peut aider, dans la suite, à
+savoir de quoi l’on parle. La figure ci-dessous propose un tel plan.
+								 </p>
+								 <p>
+									Au sein de l’informatique existent des disciplines dont la nomenclature n’est pas
+aussi bien établie que celles des mathématiques, certes, et la classification proposée
+ici est probablement contestable. Dans la partie d’un seul tenant de mon plan en croix j’ai mentionné ce qui me semblait constituer les sept disciplines majeures, et
+la proximité dans le plan se veut refléter la proximité des disciplines : vers le haut,
+le plus abstrait, vers le bas, on se rapproche de la matière.
+								 </p>
+								 <img src="images_systExp/Discipline_Informatique.PNG">
+								 <legend>figure 1: les disciplines de l'informatique</legend>
+								 <p>
+									J’ai mis l’« intelligence artificielle » entre guillemets et dans un cadre un peu à
+l’écart parce que cette discipline me semble, au moins, très mal nommée. Les ellipses
+contiennent les noms des grands paradigmes qui donnent les clés de l’informatique.
+Flottant libres de cadres sont les noms de disciplines qui, pour avoir des proximités
+avec l’informatique, n’en font pas partie, même si parfois elles lui sont rattachées
+par erreur.
+								 </p>
+								 <p>
+									Le lecteur familier d’une autre science sera sans doute surpris par cette description, surtout s’il vit et travaille en France. En effet, dans ce pays où l’informatique
+a du mal à se faire reconnaître comme une discipline à part entière par les institutions de l’élite, chacun l’imagine selon les applications (ou les représentations) qui
+en sont faites dans son domaine. Ainsi le physicien a tendance à la réduire au calcul,
+tant cette activité est pour lui associée à l’informatique. Le biologiste s’étonnera de
+l’absence de l’analyse de séquences dont il croit qu’elle est partie constituante de
+l’informatique, tandis que le mathématicien imagine qu’elle se réduit à l’algèbre du
+monoïde libre et que le statisticien n’y voit que l’analyse en composantes principales.
+Tous ces domaines sont liés d’une façon ou d’une autre à l’informatique, mais n’en
+								 </p>
+								 <p>
+									font nullement partie. Quant aux parties de l’informatique qui sont indépendantes,
+lorsque leur existence n’est pas purement ou simplement ignorée, elles sont considérées comme des techniques rudimentaires, alors que ce sont souvent les domaines les
+plus complexes.
+								 </p>
+
+								 <h3>Architectures</h3>
+								 <p>
+									Les lignes qui précèdent recourent à plusieurs reprises au terme architecture. Il
+s’agit de plus que d’une commodité de langage, et d’autre chose que d’un fantasme
+d’informaticien frustré de travailler toujours dans l’immatériel et l’abstrait et envieux
+du matériau concret palpé par le bâtisseur.
+								 </p>
+								 <p>
+									Lorsque l’architecte conçoit un bâtiment, ou l’urbaniste un quartier, leur préoccupation première, avant de concevoir chaque pièce, ou chaque pâté de maisons,
+porte sur les moyens de circuler entre ces éléments : couloirs, escaliers, halls, vestibules, ou rues, allées, places, ponts, esplanades.
+								 </p>
+								 <p>
+									Il en va de même pour le concepteur d’un système informatique, qu’il soit matériel ou logiciel. Comment l’information circule-t-elle entre le disque dur et la mémoire
+centrale, de celle-ci au processeur ? Comment les différents programmes d’un logiciel
+partagent-ils des données, ou au contraire en garantissent-ils l’accès exclusif ? Voilà
+les grandes questions de la conception informatique, et au cœur de ces questions
+se trouve le grand aiguilleur, le grand régulateur : le système d’exploitation. L’ouvrage de Hennessy et Patterson Architecture des ordinateurs [31] donnera au lecteur
+une vision approfondie de ces questions et de certaines réponses qui leur ont été
+apportées.
+								 </p>
+								 <p>
+									Le « plan de masse » des disciplines informatiques que nous avons dessiné à la
+figure 1 renvoie à cette analogie architecturale.
+								 </p>
+
+								 <h3>Enjeux d’une histoire</h3>
+								 <p>
+									L’histoire de l’informatique peut être considérée sous différents angles : histoire
+de la pensée scientifique, histoire des techniques de calcul automatique, histoire des
+ordinateurs. Ces trois éclairages (il y en aurait d’autres) illumineraient une scène
+qui se joue depuis plus longtemps qu’il n’est envisagé communément, la poursuite
+du rêve prométhéen de construire un être mécanique pensant.
+								 </p>
+								 <p>
+									Si ce rêve, on l’imagine volontiers, a mobilisé les ingénieurs les plus inventifs, de
+Ctésibios d’Alexandrie à Steve Jobs, on néglige souvent l’engagement dans cette
+voie de philosophes et savants parmi les plus éminents, tels Blaise Pascal, Gottfried
+Wilhelm von Leibniz, John von Neumann, ou on le sous-estime en réduisant cette
+part de leur œuvre à un passe-temps. En fait Leibniz par exemple est le précurseur
+de l’informatique moderne par trois contributions majeures (et ignorées pendant
+plus de deux siècles) : la réalisation concrète d’une machine capable d’effectuer les
+quatre opérations arithmétiques, la conception d’une caractéristique universelle qui
+préfigure les systèmes formels de la logique moderne et, partant, les langages de
+programmation, enfin l’étude, sur des documents chinois, de l’arithmétique binaire, dont il perçoit et analyse la simplicité qu’elle peut conférer à un système de calcul
+automatique. De même von Neumann est plus respecté pour la théorie des jeux ou
+ses travaux de mathématiques pures que pour son invention de l’ordinateur, la plus
+importante du XXe
+siècle.
+								 </p>
+								 <p>
+									D’autres précurseurs sont quant à eux tout simplement sous-estimés comme
+hommes de science. Ce n’est que récemment que la véritable stature de Charles Babbage (1791–1871) est apparue : longtemps considéré comme l’ingénieur maniaque de
+machines à calcul qui n’ont jamais marché, il avait en fait conçu avec sa machine
+analytique un ordinateur complet auquel n’a manqué que la réalisation ; par ailleurs
+son rôle dans le progrès considérable des mathématiques anglaises au XIX
+e
+siècle
+est désormais reconnu. La même reconnaissance échoit finalement à Alan Turing,
+malgré le dédain ou l’ignorance volontaire où les mathématiciens, spécialement en
+France, relèguent tant la logique que les recherches sur les Fondements initiées par
+David Hilbert et Kurt Gödel. Bref, l’informatique sera bientôt vraiment reconnue
+comme une science, peut-être...
+								 </p>
+								 <p>
+									Il faut dire que nous revenons de loin. Si nous sommes revenus. Assez récemment,
+à la fin du siècle dernier, j’ai visité le très beau Museum of Science and Industry de
+Chicago. La salle consacrée à l’informatique, grande et belle, illustrait le déclin fatal
+infligé à la dimension spectaculaire des ordinateurs par la miniaturisation électronique. Cela dit, malgré le panneau Computer Science à l’entrée, qu’il s’agisse là d’une
+science n’était guère patent : on voyait des exploits d’ingénieurs, ce qui d’ailleurs
+donnait la part belle aux précurseurs français Blaise Pascal et Thomas de Colmar
+qui partageaient avec Wilhelm Schickard et Charles Babbage le stand des précurseurs d’avant l’électricité, des réalisations industrielles, mais nulle mention qu’il y
+eût aussi, dans ce domaine, un paradigme, des théories, des concepts, certes plus
+difficiles à mettre en vitrine que des disques durs. On pourra m’objecter que c’est
+aussi un musée de l’Industrie, mais bon, il y avait bien des salles de mathématiques...
+								 </p>
+								 <p>
+									Cette salle qui se disait de Computer Science était en fait de machines à calculer et d’ordinateurs, ce qui n’est qu’un versant de la chose. L’ordinateur apparaissait comme le fruit d’une évolution quasi darwinienne prenant son origine chez
+les machines mécaniques, passant aux machines mécanographiques des années 1890
+- 1950, puis aux grands calculateurs électroniques pré-informatiques, pour aboutir
+avec l’ENIAC à l’ordinateur.
+								 </p>
+								 <p>
+									Cette vision de l’histoire informatique est assez répandue, mais assez discutable
+et surtout assez tronquée. À la sortie de cette salle du musée une pancarte donnait
+un indice sur la nature du biais donné à la présentation et sur l’orientation de
+la vision qui avait pu l’engendrer : tout ce que j’avais vu était un cadeau de la
+compagnie IBM. Je ne partage pas avec certains de mes collègues universitaires le
+dédain pour les réalisations informatiques d’IBM, qui a été à l’origine d’innovations
+majeures, comme le disque magnétique, le processeur RISC, la multiprogrammation,
+le processeur en pipeline et bien d’autres. Mais il est inévitable qu’une compagnie
+dont les origines sont dans la mécanographie soit sujette à y voir la naissance de
+l’informatique, plus que dans les recherches menées à l’IAS (Institute for Advanced Studies) de Princeton par des théoriciens issus d’horizons différents, en l’occurrence
+Church, von Neumann et Turing.
+								 </p>
+
+								 <br><br><br>
+								<hr>
+								<p>Source: Laurent Bloch (Les systèmes d’exploitation des
+									ordinateurs
+									Histoire, fonctionnement, enjeux, 2 décembre 2013).</p>
+
+							</div>
+						</div>
+						<div class="col-d">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</section>
+				<!-- ceci est le PIED DE PAGE-->
+		<footer>
+			<div class="pied">
+				<p> Copyright 2021 Yéro Bhoye Sow- Toute réproduction interdite. </p>
+			</div>
+		</footer>
+	</body>
+</html>
