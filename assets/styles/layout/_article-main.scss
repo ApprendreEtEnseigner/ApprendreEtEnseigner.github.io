@@ -29,6 +29,7 @@ main {
         .body-slide,
         .body-podcast,
         .body-qcm {
+
             p {
                 font-size: 20px;
                 line-height: 30px;
@@ -85,15 +86,51 @@ main {
                 }
             }
 
-            // .body-article {
-            //     #schema-article {
-            //         width: 450px;
+            .subtitle-body {
+                .parag-with-ol {
+                    ol {
+                        li {
+                            font-size: 20px;
+                            line-height: 30px;
+                            margin: 0 0 12px 0;
+                            list-style-type: decimal;
 
-            //         @media(max-width: 800px) {
-            //             width: 80%;
-            //         }
-            //     }
-            // }
+                            @media(max-width: 1100px) {
+                                font-size: 18px;
+                                line-height: 25px;
+
+                            }
+
+                            @media(max-width: 800px) {
+                                line-height: 22px;
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+
+                .parag-with-ul {
+                    ul {
+                        li {
+                            font-size: 20px;
+                            line-height: 30px;
+                            list-style-type: inherit;
+                            ;
+
+                            @media(max-width: 1100px) {
+                                font-size: 18px;
+                                line-height: 25px;
+
+                            }
+
+                            @media(max-width: 800px) {
+                                line-height: 22px;
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+            }
 
 
         }
