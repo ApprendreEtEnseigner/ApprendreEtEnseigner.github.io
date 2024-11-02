@@ -1,0 +1,49 @@
+form {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, .8);
+    border-radius: 10px;
+    margin: 10px;
+
+    .score {
+        color: gree;
+        text-align: right;
+    }
+
+    #question {
+        margin: 15px 0;
+    }
+
+    .input {
+        display: block;
+        width: 100%;
+        font-size: 30px;
+        padding: 10px;
+        text-align: center;
+        border: 4px solid green;
+        color: green;
+
+        &::placeholder {
+            color: lightgray;
+            font-family: cursive, sans-serif;
+        }
+    }
+
+    .btn {
+        display: block;
+        color: white;
+        background: green;
+        width: 100%;
+        padding: 10px;
+        font-size: 20px;
+        border: none;
+        margin: 20px 0;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgb(0, 0, 0, .3);
+        cursor: pointer;
+
+        &:hover {
+            filter: brightness(0.9);
+        }
+    }
+}

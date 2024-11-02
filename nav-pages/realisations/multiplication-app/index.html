@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiplication App</title>
+
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <form action="" class="form" id="form">
+      <h4 class="score" id="score">Score: 0</h4>
+      <h1 id="question">What is 1 multiply by 1 ?</h1>
+      <input
+        type="text"
+        name=""
+        id="input"
+        class="input"
+        placeholder="Enter your answer..."
+        autofocus
+        autocomplete="off"
+      />
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </body>
+  <script type="module" src="./modules/initSelectors.js"></script>
+  <script type="module" src="./modules/getNumbers.js"></script>
+  <script type="module" src="./modules/scoreUtils.js"></script>
+  <script type="module" src="./modules/init.js"></script>
+  <script type="module" src="./modules/submitUserAnswer.js"></script>
+  <script type="module" src="./index.js"></script>
+</html>
