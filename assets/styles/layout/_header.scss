@@ -86,21 +86,31 @@ header {
                 gap: 60px;
                 margin: 0;
 
-                
 
-                li a {
-                    font-family: $poppins-bold, sans-serif;
-                    font-weight: bold;
-                    letter-spacing: 1px;
-                    font-size: 16px;
-                    padding: 16px 8px;
+                li {
+                    a {
+                        font-family: $poppins-bold, sans-serif;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                        font-size: 16px;
+                        padding: 16px 8px;
+                        transition: all 0.3s ease;
 
-                    &:is(:link, :active, :visited) {
-                        color: #fff;
 
-                        &.active{
-                            border-bottom: 3px solid $orange;
-                            transition: all 0.3s ease;
+                        &:is(:link, :active, :visited) {
+                            color: #fff;
+
+                            &.active {
+                                border-bottom: 3px solid $orange;
+                                transition: all 0.3s ease;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        a {
+
+                            color: orange;
                         }
                     }
                 }

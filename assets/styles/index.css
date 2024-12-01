@@ -207,6 +207,7 @@ header .wrapper-cours nav ul li a {
   letter-spacing: 1px;
   font-size: 16px;
   padding: 16px 8px;
+  transition: all 0.3s ease;
 }
 header .wrapper nav ul li a:is(:link, :active, :visited),
 header .wrapper-cours nav ul li a:is(:link, :active, :visited) {
@@ -216,6 +217,10 @@ header .wrapper nav ul li a:is(:link, :active, :visited).active,
 header .wrapper-cours nav ul li a:is(:link, :active, :visited).active {
   border-bottom: 3px solid #DA722C;
   transition: all 0.3s ease;
+}
+header .wrapper nav ul li:hover a,
+header .wrapper-cours nav ul li:hover a {
+  color: orange;
 }
 @media (max-width: 800px) {
   header .wrapper nav,
