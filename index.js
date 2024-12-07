@@ -30,3 +30,12 @@ menuIcon.addEventListener("click", () => {
 closeIcon.addEventListener("click", () => {
   mobileMenuContainer.classList.remove("active");
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var countUp = new CountUp("counter", 54);
+  if (!countUp.error) {
+    countUp.start();
+  } else {
+    console.error(countUp.error);
+  }
+});
