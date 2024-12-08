@@ -6,6 +6,7 @@ const mobileNav = document.querySelector("nav.mobile-nav");
 const menuIcon = document.querySelector(".menu-icon");
 const closeIcon = document.querySelector(".mobile-menu-container .close-icon");
 const mobileMenuContainer = document.querySelector(".mobile-menu-container");
+let valueDisplays = document.querySelectorAll(".num");
 
 links.forEach((link) => {
   if (link.href.includes(`${activePage}`)) {
@@ -31,11 +32,28 @@ closeIcon.addEventListener("click", () => {
   mobileMenuContainer.classList.remove("active");
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  var countUp = new CountUp("counter", 54);
-  if (!countUp.error) {
-    countUp.start();
-  } else {
-    console.error(countUp.error);
-  }
+// typed js
+const typed = new Typed(".multiple-text", {
+  strings: ["Apprendre & Enseigner,", "L'art d'apprendre en <br> enseignant"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true,
+});
+
+//  LIVE COUNT
+let interval = 4000;
+valueDisplays.forEach((valueDisplays) => {
+  let startValue = 0;
+  let endValue = parseInt(valueDisplays.getAttribute("data-val"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(() => {
+    startValue += 1;
+    valueDisplays.textContent = startValue;
+    if (startValue == endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
+
+  console.log(endValue);
 });
