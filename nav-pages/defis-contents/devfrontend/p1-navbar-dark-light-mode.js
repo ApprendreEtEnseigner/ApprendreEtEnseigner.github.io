@@ -37,6 +37,8 @@ function ShowMessage(Feedback) {
   setTimeout("document.getElementById('FeedbackOKButton').focus()", 50);
 
   //
+  //	RefreshImages();
+  //
 }
 
 function ShowElements(Show, TagName, ContainerToReverse) {
@@ -186,6 +188,26 @@ function Shuffle(InArray) {
 
 function WriteToInstructions(Feedback) {
   document.getElementById("InstructionsDiv").innerHTML = Feedback;
+
+  RefreshImages();
+}
+
+Imgs = new Array();
+
+function PreloadImages() {
+  var a = PreloadImages.arguments;
+  for (var i = 0; i < a.length; i++) {
+    Imgs[i] = new Image();
+    Imgs[i].src = a[i];
+  }
+}
+
+function RefreshImages() {
+  for (var i = 0; i < document.images.length; i++) {
+    if (document.images[i].name.substring(0, 6) != "NavBar") {
+      document.images[i].src = document.images[i].src;
+    }
+  }
 }
 
 function EscapeDoubleQuotes(InString) {
@@ -504,31 +526,31 @@ I[0][1] = "";
 I[0][2] = "0";
 I[0][3] = new Array();
 I[0][3][0] = new Array(
-  'Menu Assistance > Ticket > Statut = "En cours"',
+  "La classe active est ajout\u00E9e \u00E0 l\u2019\u00E9l\u00E9ment nav.",
   "",
   0,
   0,
   1
 );
 I[0][3][1] = new Array(
-  'Menu Assistance > Ticket > Statut = "En attente"',
+  "La classe active est supprim\u00E9e de l\u2019\u00E9l\u00E9ment nav.",
   "",
   0,
   0,
   1
 );
 I[0][3][2] = new Array(
-  'Menu Assistance > Ticket > Statut = "Clos"',
-  'Vous pouvez rechercher un ticket clos via le menu Assistance > Ticket et en recherchant le statut "Clos". Ne confondez pas avec d\'autres statuts comme "En cours" ou "En attente".',
-  1,
-  100,
-  1
-);
-I[0][3][3] = new Array(
-  'Menu Assistance > Ticket > Statut = "Nouveau"',
+  "La classe active est bascul\u00E9e sur l\u2019\u00E9l\u00E9ment nav.",
   "",
   0,
   0,
+  1
+);
+I[0][3][3] = new Array(
+  "Rien ne se passe car l\u2019\u00E9l\u00E9ment cliqu\u00E9 contient la classe menu.",
+  "V\u00E9rification des classes : Le code v\u00E9rifie si l\u2019\u00E9l\u00E9ment cliqu\u00E9 contient les classes sidebarOpen ou menu. <br> Aucune action : Si l\u2019\u00E9l\u00E9ment cliqu\u00E9 contient la classe menu, la condition if n\u2019est pas remplie et la classe active n\u2019est pas supprim\u00E9e de l\u2019\u00E9l\u00E9ment nav.<br> Erreurs \u00E0 \u00E9viter : Assurez-vous que les classes sont correctement appliqu\u00E9es et que le code est correctement li\u00E9 \u00E0 l\u2019\u00E9v\u00E9nement click.",
+  1,
+  100,
   1
 );
 I[1] = new Array();
@@ -537,31 +559,31 @@ I[1][1] = "";
 I[1][2] = "0";
 I[1][3] = new Array();
 I[1][3][0] = new Array(
-  'Menu Assistance > Ticket > Statut = "En cours"',
+  "La classe active est ajout\u00E9e \u00E0 l\u2019\u00E9l\u00E9ment nav.",
   "",
   0,
   0,
   1
 );
 I[1][3][1] = new Array(
-  'Menu Assistance > Ticket > Statut = "En attente"',
+  "La classe active est supprim\u00E9e de l\u2019\u00E9l\u00E9ment nav.",
   "",
   0,
   0,
   1
 );
 I[1][3][2] = new Array(
-  'Menu Assistance > Ticket > Statut = "Clos"',
-  'Vous pouvez retrouver un ticket clos via le menu Assistance > Ticket et en recherchant le statut "Clos". Ne confondez pas avec d\'autres statuts comme "En cours" ou "En attente".',
-  1,
-  100,
-  1
-);
-I[1][3][3] = new Array(
-  'Menu Assistance > Ticket > Statut = "Nouveau"',
+  "La classe active est bascul\u00E9e sur l\u2019\u00E9l\u00E9ment nav.",
   "",
   0,
   0,
+  1
+);
+I[1][3][3] = new Array(
+  "Rien ne se passe car l\u2019\u00E9l\u00E9ment cliqu\u00E9 contient la classe sidebarOpen.",
+  "V\u00E9rification des classes : Le code v\u00E9rifie si l\u2019\u00E9l\u00E9ment cliqu\u00E9 contient les classes sidebarOpen ou menu. Aucune action : Si l\u2019\u00E9l\u00E9ment cliqu\u00E9 contient la classe sidebarOpen, la condition if n\u2019est pas remplie et la classe active n\u2019est pas supprim\u00E9e de l\u2019\u00E9l\u00E9ment nav. Erreurs \u00E0 \u00E9viter : Assurez-vous que les classes sont correctement appliqu\u00E9es et que le code est correctement li\u00E9 \u00E0 l\u2019\u00E9v\u00E9nement click.",
+  1,
+  100,
   1
 );
 I[2] = new Array();
@@ -569,29 +591,65 @@ I[2][0] = 100;
 I[2][1] = "";
 I[2][2] = "0";
 I[2][3] = new Array();
-I[2][3][0] = new Array("Clore le ticket imm\u00E9diatement", "", 0, 0, 1);
+I[2][3][0] = new Array(
+  "La classe active est ajout\u00E9e \u00E0 l\u2019\u00E9l\u00E9ment nav.",
+  "",
+  0,
+  0,
+  1
+);
 I[2][3][1] = new Array(
-  "Obtenir la confirmation du demandeur",
-  "Vous devez obtenir la confirmation du demandeur avant de clore le ticket. Ne confondez pas avec la cl\u00F4ture imm\u00E9diate sans confirmation.",
+  "La classe active est supprim\u00E9e de l\u2019\u00E9l\u00E9ment nav.",
+  "V\u00E9rification des classes : Le code v\u00E9rifie si l\u2019\u00E9l\u00E9ment cliqu\u00E9 ne contient pas les classes sidebarOpen ou menu. Suppression de la classe : Si l\u2019\u00E9l\u00E9ment cliqu\u00E9 ne contient pas ces classes, la classe active est supprim\u00E9e de l\u2019\u00E9l\u00E9ment nav, fermant ainsi la barre lat\u00E9rale. Erreurs \u00E0 \u00E9viter : Assurez-vous que les classes sont correctement appliqu\u00E9es et que le code est correctement li\u00E9 \u00E0 l\u2019\u00E9v\u00E9nement click.",
   1,
   100,
   1
 );
-I[2][3][2] = new Array('Mettre le ticket en "En attente"', "", 0, 0, 1);
-I[2][3][3] = new Array("R\u00E9attribuer le ticket", "", 0, 0, 1);
+I[2][3][2] = new Array(
+  "La classe active est bascul\u00E9e sur l\u2019\u00E9l\u00E9ment nav.",
+  "",
+  0,
+  0,
+  1
+);
+I[2][3][3] = new Array(
+  "Rien ne se passe car l\u2019\u00E9v\u00E9nement click n\u2019est pas \u00E9cout\u00E9 sur l\u2019\u00E9l\u00E9ment body.",
+  "",
+  0,
+  0,
+  1
+);
 I[3] = new Array();
 I[3][0] = 100;
 I[3][1] = "";
 I[3][2] = "0";
 I[3][3] = new Array();
-I[3][3][0] = new Array("Incident", "", 0, 0, 1);
-I[3][3][1] = new Array("Demande", "", 0, 0, 1);
-I[3][3][2] = new Array("Probl\u00E8me", "", 0, 0, 1);
-I[3][3][3] = new Array(
-  "Changement",
-  "Coordonner les \u00E9quipes support inclut la planification et le suivi du traitement des demandes d'installation de mat\u00E9riel.",
+I[3][3][0] = new Array(
+  "Elle affiche un message dans la console lorsque l\u2019utilisateur clique sur la barre lat\u00E9rale.",
+  "",
+  0,
+  0,
+  1
+);
+I[3][3][1] = new Array(
+  "Elle affiche l\u2019\u00E9l\u00E9ment cliqu\u00E9 dans la console pour le d\u00E9bogage.",
+  "Affichage dans la console : La ligne console.log(clickedElem); affiche l\u2019\u00E9l\u00E9ment cliqu\u00E9 dans la console du navigateur, ce qui est utile pour le d\u00E9bogage. D\u00E9bogage : Cela permet de v\u00E9rifier quel \u00E9l\u00E9ment a \u00E9t\u00E9 cliqu\u00E9 et de s\u2019assurer que le code fonctionne comme pr\u00E9vu. Erreurs \u00E0 \u00E9viter : Assurez-vous que la console du navigateur est ouverte pour voir les messages de d\u00E9bogage.",
   1,
   100,
+  1
+);
+I[3][3][2] = new Array(
+  "Elle ajoute une classe \u00E0 l\u2019\u00E9l\u00E9ment cliqu\u00E9.",
+  "",
+  0,
+  0,
+  1
+);
+I[3][3][3] = new Array(
+  "Elle supprime une classe de l\u2019\u00E9l\u00E9ment cliqu\u00E9.",
+  "",
+  0,
+  0,
   1
 );
 I[4] = new Array();
@@ -599,113 +657,161 @@ I[4][0] = 100;
 I[4][1] = "";
 I[4][2] = "0";
 I[4][3] = new Array();
-I[4][3][0] = new Array("Clore le ticket", "", 0, 0, 1);
+I[4][3][0] = new Array(
+  "La classe active est ajout\u00E9e \u00E0 l\u2019\u00E9l\u00E9ment nav.",
+  "",
+  0,
+  0,
+  1
+);
 I[4][3][1] = new Array(
-  'Mettre le ticket en "En attente"',
-  'Vous devez mettre le ticket en "En attente" si le demandeur ne confirme pas la r\u00E9solution. Ne confondez pas avec la cl\u00F4ture ou la r\u00E9attribution sans confirmation.',
+  "La classe active est supprim\u00E9e de l\u2019\u00E9l\u00E9ment nav.",
+  "S\u00E9lection de l\u2019\u00E9l\u00E9ment : Le code commence par s\u00E9lectionner l\u2019\u00E9l\u00E9ment avec la classe .siderbarClose. \u00C9couteur d\u2019\u00E9v\u00E9nements : Un \u00E9couteur d\u2019\u00E9v\u00E9nements est ajout\u00E9 pour \u00E9couter les clics sur cet \u00E9l\u00E9ment. Suppression de la classe : Lors du clic, la classe active est supprim\u00E9e de l\u2019\u00E9l\u00E9ment nav, ce qui permet de fermer la barre lat\u00E9rale. Erreurs \u00E0 \u00E9viter : Assurez-vous que l\u2019\u00E9l\u00E9ment .siderbarClose existe et que le code est correctement li\u00E9 \u00E0 l\u2019\u00E9v\u00E9nement click.",
   1,
   100,
   1
 );
-I[4][3][2] = new Array("R\u00E9attribuer le ticket", "", 0, 0, 1);
-I[4][3][3] = new Array("Escalader le ticket", "", 0, 0, 1);
+I[4][3][2] = new Array(
+  "La classe active est bascul\u00E9e sur l\u2019\u00E9l\u00E9ment nav.",
+  "",
+  0,
+  0,
+  1
+);
+I[4][3][3] = new Array(
+  "Rien ne se passe car l\u2019\u00E9v\u00E9nement click n\u2019est pas \u00E9cout\u00E9 sur cet \u00E9l\u00E9ment.",
+  "",
+  0,
+  0,
+  1
+);
 I[5] = new Array();
 I[5][0] = 100;
 I[5][1] = "";
 I[5][2] = "0";
 I[5][3] = new Array();
 I[5][3][0] = new Array(
-  "Continuer \u00E0 travailler sur le ticket",
+  "Il s\u00E9lectionne les \u00E9l\u00E9ments .sidebarOpen et .siderbarClose et ajoute des \u00E9couteurs d\u2019\u00E9v\u00E9nements pour basculer la classe active sur l\u2019\u00E9l\u00E9ment nav.",
+  "S\u00E9lection des \u00E9l\u00E9ments : Le code s\u00E9lectionne les \u00E9l\u00E9ments avec les classes .sidebarOpen et .siderbarClose et les stocke dans les variables correspondantes. \u00C9couteurs d\u2019\u00E9v\u00E9nements : Des \u00E9couteurs d\u2019\u00E9v\u00E9nements sont ajout\u00E9s pour \u00E9couter les clics sur ces \u00E9l\u00E9ments. Basculement des classes : Lors du clic sur .sidebarOpen, la classe active est ajout\u00E9e \u00E0 l\u2019\u00E9l\u00E9ment nav. Lors du clic sur .siderbarClose, la classe active est supprim\u00E9e de l\u2019\u00E9l\u00E9ment nav. Erreurs \u00E0 \u00E9viter : Assurez-vous que les \u00E9l\u00E9ments .sidebarOpen et .siderbarClose existent et que le code est correctement li\u00E9 aux \u00E9v\u00E9nements click.",
+  1,
+  100,
+  1
+);
+I[5][3][1] = new Array(
+  "Il s\u00E9lectionne les \u00E9l\u00E9ments .sidebarOpen et .siderbarClose et ajoute des \u00E9couteurs d\u2019\u00E9v\u00E9nements pour ajouter la classe active \u00E0 l\u2019\u00E9l\u00E9ment nav.",
   "",
   0,
   0,
   1
 );
-I[5][3][1] = new Array(
-  "Attendre des informations suppl\u00E9mentaires",
-  'Vous devez attendre des informations suppl\u00E9mentaires. Ne confondez pas avec "Continuer \u00E0 travailler" qui est pour le statut "En cours".',
-  1,
-  100,
+I[5][3][2] = new Array(
+  "Il s\u00E9lectionne les \u00E9l\u00E9ments .sidebarOpen et .siderbarClose et ajoute des \u00E9couteurs d\u2019\u00E9v\u00E9nements pour supprimer la classe active de l\u2019\u00E9l\u00E9ment nav.",
+  "",
+  0,
+  0,
   1
 );
-I[5][3][2] = new Array("Fermer le ticket", "", 0, 0, 1);
-I[5][3][3] = new Array("R\u00E9attribuer le ticket", "", 0, 0, 1);
+I[5][3][3] = new Array(
+  "Il ne fait rien car l\u2019\u00E9v\u00E9nement click n\u2019est pas \u00E9cout\u00E9 sur ces \u00E9l\u00E9ments.",
+  "",
+  0,
+  0,
+  1
+);
 I[6] = new Array();
 I[6][0] = 100;
 I[6][1] = "";
 I[6][2] = "0";
 I[6][3] = new Array();
 I[6][3][0] = new Array(
-  "Le ticket est en cours de r\u00E9solution",
+  "La classe active est ajout\u00E9e \u00E0 l\u2019\u00E9l\u00E9ment nav.",
   "",
   0,
   0,
   1
 );
-I[6][3][1] = new Array("Le ticket est r\u00E9solu", "", 0, 0, 1);
-I[6][3][2] = new Array(
-  "Le ticket n\u00E9cessite des informations suppl\u00E9mentaires",
-  '"En attente" signifie que des informations suppl\u00E9mentaires sont n\u00E9cessaires. Ne confondez pas avec "En cours" qui indique que le travail est en cours.',
+I[6][3][1] = new Array(
+  "La classe active est supprim\u00E9e de l\u2019\u00E9l\u00E9ment nav.",
+  "S\u00E9lection de l\u2019\u00E9l\u00E9ment : Le code commence par s\u00E9lectionner l\u2019\u00E9l\u00E9ment avec la classe .siderbarClose. \u00C9couteur d\u2019\u00E9v\u00E9nements : Un \u00E9couteur d\u2019\u00E9v\u00E9nements est ajout\u00E9 pour \u00E9couter les clics sur cet \u00E9l\u00E9ment. Suppression de la classe : Lors du clic, la classe active est supprim\u00E9e de l\u2019\u00E9l\u00E9ment nav, ce qui permet de fermer la barre lat\u00E9rale si elle est d\u00E9j\u00E0 ouverte. Erreurs \u00E0 \u00E9viter : Assurez-vous que l\u2019\u00E9l\u00E9ment .siderbarClose existe et que le code est correctement li\u00E9 \u00E0 l\u2019\u00E9v\u00E9nement click.",
   1,
   100,
   1
 );
-I[6][3][3] = new Array("Le ticket est ferm\u00E9", "", 0, 0, 1);
+I[6][3][2] = new Array(
+  "La classe active est bascul\u00E9e sur l\u2019\u00E9l\u00E9ment nav.",
+  "",
+  0,
+  0,
+  1
+);
+I[6][3][3] = new Array(
+  "Rien ne se passe car l\u2019\u00E9v\u00E9nement click n\u2019est pas \u00E9cout\u00E9 sur cet \u00E9l\u00E9ment.",
+  "",
+  0,
+  0,
+  1
+);
 I[7] = new Array();
 I[7][0] = 100;
 I[7][1] = "";
 I[7][2] = "0";
 I[7][3] = new Array();
 I[7][3][0] = new Array(
-  "Le ticket est en cours de r\u00E9solution",
-  "",
-  0,
-  0,
-  1
-);
-I[7][3][1] = new Array(
-  "Le ticket est r\u00E9solu et confirm\u00E9 par l'utilisateur",
-  '"Ferm\u00E9" signifie que le ticket est r\u00E9solu et confirm\u00E9 par l\'utilisateur. Ne confondez pas avec "R\u00E9solu" qui est avant la confirmation.',
+  "La classe active est ajout\u00E9e \u00E0 l\u2019\u00E9l\u00E9ment nav.",
+  "S\u00E9lection de l\u2019\u00E9l\u00E9ment : Le code commence par s\u00E9lectionner l\u2019\u00E9l\u00E9ment avec la classe .sidebarOpen. \u00C9couteur d\u2019\u00E9v\u00E9nements : Un \u00E9couteur d\u2019\u00E9v\u00E9nements est ajout\u00E9 pour \u00E9couter les clics sur cet \u00E9l\u00E9ment. Ajout de la classe : Lors du clic, la classe active est ajout\u00E9e \u00E0 l\u2019\u00E9l\u00E9ment nav, ce qui permet d\u2019ouvrir la barre lat\u00E9rale si elle est ferm\u00E9e. Erreurs \u00E0 \u00E9viter : Assurez-vous que l\u2019\u00E9l\u00E9ment .sidebarOpen existe et que le code est correctement li\u00E9 \u00E0 l\u2019\u00E9v\u00E9nement click.",
   1,
   100,
   1
 );
-I[7][3][2] = new Array(
-  "Le ticket n\u00E9cessite des informations suppl\u00E9mentaires",
+I[7][3][1] = new Array(
+  "La classe active est supprim\u00E9e de l\u2019\u00E9l\u00E9ment nav.",
   "",
   0,
   0,
   1
 );
-I[7][3][3] = new Array("Le ticket est r\u00E9attribu\u00E9", "", 0, 0, 1);
+I[7][3][2] = new Array(
+  "La classe active est bascul\u00E9e sur l\u2019\u00E9l\u00E9ment nav.",
+  "",
+  0,
+  0,
+  1
+);
+I[7][3][3] = new Array(
+  "Rien ne se passe car l\u2019\u00E9v\u00E9nement click n\u2019est pas \u00E9cout\u00E9 sur cet \u00E9l\u00E9ment.",
+  "",
+  0,
+  0,
+  1
+);
 I[8] = new Array();
 I[8][0] = 100;
 I[8][1] = "";
 I[8][2] = "0";
 I[8][3] = new Array();
 I[8][3][0] = new Array(
-  "Utilisatrice satisfaite, ticket clos",
-  'Le commentaire doit indiquer que l\'utilisatrice est satisfaite et que le ticket est clos. Ne confondez pas avec des statuts incorrects comme "en cours" ou "en attente".',
-  1,
-  100,
+  "Il ajoute la classe dark au body et enregistre \u201Cdark-mode\u201D dans localStorage.",
+  "",
+  0,
+  0,
   1
 );
 I[8][3][1] = new Array(
-  "Utilisatrice insatisfaite, ticket en cours",
+  "Il supprime la classe dark du body et enregistre \u201Clight-mode\u201D dans localStorage.",
   "",
   0,
   0,
   1
 );
 I[8][3][2] = new Array(
-  "Utilisatrice satisfaite, ticket en attente",
-  "",
-  0,
-  0,
+  "Il v\u00E9rifie si le body a la classe dark et enregistre \u201Clight-mode\u201D ou \u201Cdark-mode\u201D dans localStorage en cons\u00E9quence.",
+  "V\u00E9rification de la classe : Le code v\u00E9rifie si l\u2019\u00E9l\u00E9ment body contient la classe dark. Enregistrement de l\u2019\u00E9tat : Si le body n\u2019a pas la classe dark, l\u2019\u00E9tat \u201Clight-mode\u201D est enregistr\u00E9 dans localStorage. Sinon, l\u2019\u00E9tat \u201Cdark-mode\u201D est enregistr\u00E9. Persistance de l\u2019\u00E9tat : Cette logique permet de conserver le mode s\u00E9lectionn\u00E9 par l\u2019utilisateur m\u00EAme apr\u00E8s un rechargement de la page ou une r\u00E9ouverture du navigateur. Erreurs \u00E0 \u00E9viter : Assurez-vous que localStorage est disponible et fonctionne correctement dans le navigateur. V\u00E9rifiez \u00E9galement que la classe dark est correctement ajout\u00E9e ou supprim\u00E9e du body en fonction de l\u2019\u00E9tat actuel.",
+  1,
+  100,
   1
 );
 I[8][3][3] = new Array(
-  "Utilisatrice satisfaite, ticket r\u00E9attribu\u00E9",
+  "Il ne fait rien car localStorage ne peut pas \u00EAtre utilis\u00E9 de cette mani\u00E8re.",
   "",
   0,
   0,
@@ -716,16 +822,34 @@ I[9][0] = 100;
 I[9][1] = "";
 I[9][2] = "0";
 I[9][3] = new Array();
-I[9][3][0] = new Array("En attente", "", 0, 0, 1);
-I[9][3][1] = new Array("En cours", "", 0, 0, 1);
-I[9][3][2] = new Array(
-  "Nouveau",
-  'Le statut initial est "Nouveau". Ne confondez pas avec "En cours" qui est utilis\u00E9 apr\u00E8s l\'attribution \u00E0 un technicien.',
+I[9][3][0] = new Array(
+  "Le mode sombre reste activ\u00E9 car l\u2019\u00E9tat est enregistr\u00E9 dans localStorage.",
+  "R\u00E9cup\u00E9ration de l\u2019\u00E9tat : Au chargement de la page, le code r\u00E9cup\u00E8re l\u2019\u00E9l\u00E9ment \u201Cmode\u201D de localStorage et le stocke dans la variable getMode. V\u00E9rification de l\u2019\u00E9tat : Si getMode existe et que sa valeur est \u201Cdark-mode\u201D, la classe dark est ajout\u00E9e \u00E0 l\u2019\u00E9l\u00E9ment body, maintenant ainsi le mode sombre activ\u00E9. Persistance de l\u2019\u00E9tat : L\u2019utilisation de localStorage permet de conserver l\u2019\u00E9tat s\u00E9lectionn\u00E9 par l\u2019utilisateur m\u00EAme apr\u00E8s un rechargement de la page ou une r\u00E9ouverture du navigateur. Erreurs \u00E0 \u00E9viter : Assurez-vous que localStorage est disponible et fonctionne correctement dans le navigateur. V\u00E9rifiez \u00E9galement que la cl\u00E9 \u201Cmode\u201D a \u00E9t\u00E9 correctement d\u00E9finie dans localStorage.",
   1,
   100,
   1
 );
-I[9][3][3] = new Array("R\u00E9solu", "", 0, 0, 1);
+I[9][3][1] = new Array(
+  "Le mode sombre est d\u00E9sactiv\u00E9 et le mode clair est activ\u00E9 par d\u00E9faut.",
+  "",
+  0,
+  0,
+  1
+);
+I[9][3][2] = new Array(
+  "Le mode sombre reste activ\u00E9 mais l\u2019\u00E9tat n\u2019est pas enregistr\u00E9 dans localStorage.",
+  "",
+  0,
+  0,
+  1
+);
+I[9][3][3] = new Array(
+  "Le mode sombre est d\u00E9sactiv\u00E9 et l\u2019\u00E9tat est supprim\u00E9 de localStorage.",
+  "",
+  0,
+  0,
+  1
+);
 
 function StartUp() {
   //If there's only one question, no need for question navigation controls
@@ -735,6 +859,15 @@ function StartUp() {
 
   //Stash the instructions so they can be redisplayed
   strInstructions = document.getElementById("InstructionsDiv").innerHTML;
+
+  PreloadImages(
+    "p1q1.png",
+    "p1q5.png",
+    "p1q6.png",
+    "p1q8.png",
+    "p1q9.png",
+    "p1q10.png"
+  );
 
   CompleteEmptyFeedback();
 
@@ -1080,6 +1213,8 @@ function CheckFinished() {
 function TimesUp() {
   document.getElementById("Timer").innerHTML = "Temps imparti termin&#x00E9;!";
 
+  RefreshImages();
+
   TimeOver = true;
   Finished = true;
   ShowMessage("Temps imparti termin&#x00E9;!");
@@ -1097,7 +1232,7 @@ function TimesUp() {
 
 //CODE FOR HANDLING TIMER
 //Timer code
-var Seconds = 330;
+var Seconds = 450;
 var Interval = null;
 
 function StartTimer() {

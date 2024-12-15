@@ -8,7 +8,7 @@ let contents = document.querySelectorAll(
   ".content-articles, .content-videos, .content-slides, .content-podcasts"
 );
 let contentsDefis = document.querySelectorAll(
-  ".content-penseealgorithmique, .content-technicieninformatique, .content-python, .content-linux, .content-langager, .content-basededonnees"
+  ".content-penseealgorithmique, .content-technicieninformatique, .content-devwebfrontend, .content-python, .content-linux, .content-langager, .content-basededonnees"
 );
 
 titles.forEach((title) => {
