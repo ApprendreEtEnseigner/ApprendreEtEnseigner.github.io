@@ -850,6 +850,204 @@ I[9][3][3] = new Array(
   0,
   1
 );
+I[10] = new Array();
+I[10][0] = 100;
+I[10][1] = "";
+I[10][2] = "0";
+I[10][3] = new Array();
+I[10][3][0] = new Array(
+  "La classe dark est ajout\u00E9e au body et \u201Cdark-mode\u201D est enregistr\u00E9 dans localStorage.",
+  "",
+  0,
+  0,
+  1
+);
+I[10][3][1] = new Array(
+  "La classe dark est supprim\u00E9e du body et \u201Clight-mode\u201D est enregistr\u00E9 dans localStorage.",
+  "\u00C9couteur d\u2019\u00E9v\u00E9nements : Lorsque l\u2019utilisateur clique sur l\u2019\u00E9l\u00E9ment avec la classe .dark-light, un \u00E9v\u00E9nement click est d\u00E9clench\u00E9. Basculement des classes : La classe dark est bascul\u00E9e sur l\u2019\u00E9l\u00E9ment body. Si le body a d\u00E9j\u00E0 la classe dark, elle est supprim\u00E9e. Enregistrement de l\u2019\u00E9tat : Si la classe dark est supprim\u00E9e, l\u2019\u00E9tat \u201Clight-mode\u201D est enregistr\u00E9 dans localStorage. Erreurs \u00E0 \u00E9viter : Assurez-vous que l\u2019\u00E9l\u00E9ment .dark-light existe et que le code est correctement li\u00E9 \u00E0 l\u2019\u00E9v\u00E9nement click. V\u00E9rifiez \u00E9galement que localStorage est disponible et fonctionne correctement dans le navigateur.",
+  1,
+  100,
+  1
+);
+I[10][3][2] = new Array(
+  "La classe dark est ajout\u00E9e au body mais rien n\u2019est enregistr\u00E9 dans localStorage.",
+  "",
+  0,
+  0,
+  1
+);
+I[10][3][3] = new Array(
+  "La classe dark est supprim\u00E9e du body mais rien n\u2019est enregistr\u00E9 dans localStorage.",
+  "",
+  0,
+  0,
+  1
+);
+I[11] = new Array();
+I[11][0] = 100;
+I[11][1] = "";
+I[11][2] = "0";
+I[11][3] = new Array();
+I[11][3][0] = new Array(
+  "La classe dark est ajout\u00E9e au body et \u201Cdark-mode\u201D est enregistr\u00E9 dans localStorage.",
+  "\u00C9couteur d\u2019\u00E9v\u00E9nements : Lorsque l\u2019utilisateur clique sur l\u2019\u00E9l\u00E9ment avec la classe .dark-light, un \u00E9v\u00E9nement click est d\u00E9clench\u00E9. Basculement des classes : La classe dark est bascul\u00E9e sur l\u2019\u00E9l\u00E9ment body. Si le body n\u2019a pas la classe dark, elle est ajout\u00E9e. Enregistrement de l\u2019\u00E9tat : Si la classe dark est ajout\u00E9e, l\u2019\u00E9tat \u201Cdark-mode\u201D est enregistr\u00E9 dans localStorage. Erreurs \u00E0 \u00E9viter : Assurez-vous que l\u2019\u00E9l\u00E9ment .dark-light existe et que le code est correctement li\u00E9 \u00E0 l\u2019\u00E9v\u00E9nement click. V\u00E9rifiez \u00E9galement que localStorage est disponible et fonctionne correctement dans le navigateur.",
+  1,
+  100,
+  1
+);
+I[11][3][1] = new Array(
+  "La classe dark est supprim\u00E9e du body et \u201Clight-mode\u201D est enregistr\u00E9 dans localStorage.",
+  "",
+  0,
+  0,
+  1
+);
+I[11][3][2] = new Array(
+  "La classe dark est ajout\u00E9e au body mais rien n\u2019est enregistr\u00E9 dans localStorage.",
+  "",
+  0,
+  0,
+  1
+);
+I[11][3][3] = new Array(
+  "La classe dark est supprim\u00E9e du body mais rien n\u2019est enregistr\u00E9 dans localStorage.",
+  "",
+  0,
+  0,
+  1
+);
+I[12] = new Array();
+I[12][0] = 100;
+I[12][1] = "";
+I[12][2] = "0";
+I[12][3] = new Array();
+I[12][3][0] = new Array(
+  "Le mode sombre est activ\u00E9 et l\u2019\u00E9tat est enregistr\u00E9 dans localStorage comme \u201Cdark-mode\u201D.",
+  "",
+  0,
+  0,
+  1
+);
+I[12][3][1] = new Array(
+  "Le mode clair est activ\u00E9 et l\u2019\u00E9tat est enregistr\u00E9 dans localStorage comme \u201Clight-mode\u201D.",
+  "",
+  0,
+  0,
+  1
+);
+I[12][3][2] = new Array(
+  "Le mode sombre est activ\u00E9 si le mode clair est actuellement actif, et vice versa, et l\u2019\u00E9tat est enregistr\u00E9 dans localStorage.",
+  "S\u00E9lection de l\u2019\u00E9l\u00E9ment : Le code commence par s\u00E9lectionner l\u2019\u00E9l\u00E9ment avec la classe .dark-light et lui ajoute un \u00E9couteur d\u2019\u00E9v\u00E9nements pour le clic. Basculement des classes : Lors du clic, la classe active est bascul\u00E9e sur l\u2019\u00E9l\u00E9ment .dark-light et la classe dark est bascul\u00E9e sur l\u2019\u00E9l\u00E9ment body. Enregistrement de l\u2019\u00E9tat : Si la classe dark est pr\u00E9sente sur le body, l\u2019\u00E9tat est enregistr\u00E9 dans localStorage comme \u201Cdark-mode\u201D. Sinon, il est enregistr\u00E9 comme \u201Clight-mode\u201D. Erreurs \u00E0 \u00E9viter : Assurez-vous que l\u2019\u00E9l\u00E9ment .dark-light existe et que le code est correctement li\u00E9 \u00E0 l\u2019\u00E9v\u00E9nement click. V\u00E9rifiez \u00E9galement que localStorage est disponible et fonctionne correctement dans le navigateur.",
+  1,
+  100,
+  1
+);
+I[12][3][3] = new Array(
+  "Rien ne se passe, car l\u2019\u00E9v\u00E9nement click n\u2019est pas \u00E9cout\u00E9 sur cet \u00E9l\u00E9ment.",
+  "",
+  0,
+  0,
+  1
+);
+I[13] = new Array();
+I[13][0] = 100;
+I[13][1] = "";
+I[13][2] = "0";
+I[13][3] = new Array();
+I[13][3][0] = new Array(
+  "Il ajoute la classe dark au body si localStorage contient \u201Cdark-mode\u201D.",
+  "R\u00E9cup\u00E9ration de l\u2019\u00E9tat : Le code commence par r\u00E9cup\u00E9rer l\u2019\u00E9l\u00E9ment \u201Cmode\u201D de localStorage et le stocke dans la variable getMode. V\u00E9rification de l\u2019\u00E9tat : Il v\u00E9rifie ensuite si getMode existe et si sa valeur est \u201Cdark-mode\u201D. Ajout de la classe : Si les conditions sont remplies, la classe dark est ajout\u00E9e \u00E0 l\u2019\u00E9l\u00E9ment body, activant ainsi le mode sombre. Erreurs \u00E0 \u00E9viter : Assurez-vous que localStorage est disponible et fonctionne correctement dans le navigateur. V\u00E9rifiez \u00E9galement que la cl\u00E9 \u201Cmode\u201D a \u00E9t\u00E9 correctement d\u00E9finie dans localStorage.",
+  1,
+  100,
+  1
+);
+I[13][3][1] = new Array(
+  "Il ajoute la classe dark au body si localStorage contient \u201Clight-mode\u201D.",
+  "",
+  0,
+  0,
+  1
+);
+I[13][3][2] = new Array(
+  "Il supprime la classe dark du body si localStorage contient \u201Cdark-mode\u201D.",
+  "",
+  0,
+  0,
+  1
+);
+I[13][3][3] = new Array(
+  "Il ne fait rien car localStorage ne peut pas \u00EAtre utilis\u00E9 de cette mani\u00E8re.",
+  "",
+  0,
+  0,
+  1
+);
+I[14] = new Array();
+I[14][0] = 100;
+I[14][1] = "";
+I[14][2] = "0";
+I[14][3] = new Array();
+I[14][3][0] = new Array(
+  "Il ajoute la classe active \u00E0 l\u2019\u00E9l\u00E9ment nav lorsque l\u2019utilisateur clique en dehors de la barre lat\u00E9rale.",
+  "",
+  0,
+  0,
+  1
+);
+I[14][3][1] = new Array(
+  "Il supprime la classe active de l\u2019\u00E9l\u00E9ment nav lorsque l\u2019utilisateur clique en dehors de la barre lat\u00E9rale.",
+  "\u00C9couteur d\u2019\u00E9v\u00E9nements : Le code ajoute un \u00E9couteur d\u2019\u00E9v\u00E9nements click \u00E0 l\u2019\u00E9l\u00E9ment body. D\u00E9tection de l\u2019\u00E9l\u00E9ment cliqu\u00E9 : Lors du clic, il stocke l\u2019\u00E9l\u00E9ment cliqu\u00E9 dans la variable clickedElem et l\u2019affiche dans la console. V\u00E9rification des classes : Si l\u2019\u00E9l\u00E9ment cliqu\u00E9 ne contient pas les classes sidebarOpen ou menu, la classe active est supprim\u00E9e de l\u2019\u00E9l\u00E9ment nav, fermant ainsi la barre lat\u00E9rale. Erreurs \u00E0 \u00E9viter : Assurez-vous que les classes sont correctement appliqu\u00E9es et que le code est correctement li\u00E9 \u00E0 l\u2019\u00E9v\u00E9nement click",
+  1,
+  100,
+  1
+);
+I[14][3][2] = new Array(
+  "Il bascule la classe active sur l\u2019\u00E9l\u00E9ment nav lorsque l\u2019utilisateur clique en dehors de la barre lat\u00E9rale.",
+  "",
+  0,
+  0,
+  1
+);
+I[14][3][3] = new Array(
+  "Il ne fait rien car l\u2019\u00E9v\u00E9nement click n\u2019est pas \u00E9cout\u00E9 sur l\u2019\u00E9l\u00E9ment body.",
+  "",
+  0,
+  0,
+  1
+);
+I[15] = new Array();
+I[15][0] = 100;
+I[15][1] = "";
+I[15][2] = "0";
+I[15][3] = new Array();
+I[15][3][0] = new Array(
+  "La classe active est ajout\u00E9e \u00E0 l\u2019\u00E9l\u00E9ment nav.",
+  "S\u00E9lection de l\u2019\u00E9l\u00E9ment : Le code commence par s\u00E9lectionner l\u2019\u00E9l\u00E9ment avec la classe .sidebarOpen. \u00C9couteur d\u2019\u00E9v\u00E9nements : Un \u00E9couteur d\u2019\u00E9v\u00E9nements est ajout\u00E9 pour \u00E9couter les clics sur cet \u00E9l\u00E9ment. Ajout de la classe : Lors du clic, la classe active est ajout\u00E9e \u00E0 l\u2019\u00E9l\u00E9ment nav, ce qui permet d\u2019ouvrir la barre lat\u00E9rale. Erreurs \u00E0 \u00E9viter : Assurez-vous que l\u2019\u00E9l\u00E9ment .sidebarOpen existe et que le code est correctement li\u00E9 \u00E0 l\u2019\u00E9v\u00E9nement click.",
+  1,
+  100,
+  1
+);
+I[15][3][1] = new Array(
+  "La classe active est supprim\u00E9e de l\u2019\u00E9l\u00E9ment nav.",
+  "",
+  0,
+  0,
+  1
+);
+I[15][3][2] = new Array(
+  "La classe active est bascul\u00E9e sur l\u2019\u00E9l\u00E9ment nav.",
+  "",
+  0,
+  0,
+  1
+);
+I[15][3][3] = new Array(
+  "Rien ne se passe car l\u2019\u00E9v\u00E9nement click n\u2019est pas \u00E9cout\u00E9 sur cet \u00E9l\u00E9ment.",
+  "",
+  0,
+  0,
+  1
+);
 
 function StartUp() {
   //If there's only one question, no need for question navigation controls
