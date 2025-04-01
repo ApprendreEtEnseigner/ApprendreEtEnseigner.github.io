@@ -24,6 +24,11 @@
 .btn.dark {
     @include btn;
     @include btn-dark;
+    transition: 0.3s ease all;
+
+    &:hover {
+        background: $orange;
+    }
 
     @media(max-width: 1100px) {
         padding: 12px 24px;
@@ -39,6 +44,11 @@
 .btn.light {
     @include btn;
     @include btn-light;
+    transition: 0.3s ease all;
+
+    &:hover {
+        background: $dark;
+    }
 
 }
 
