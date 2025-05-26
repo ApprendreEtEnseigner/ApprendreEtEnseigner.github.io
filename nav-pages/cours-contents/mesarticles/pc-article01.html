@@ -678,6 +678,33 @@
         </section>
 
       </div>
+
+      <div class="container" id="feedback-container">
+        <div class="header">
+          <h4 id="commentsCount">Commentaire</h4>
+        </div>
+        <hr />
+        <form id="reviewForm">
+          <input type="hidden" id="hiddenId" />
+          <div class="input-field">
+            <label for="fullName">Nom d'utilisateur</label>
+            <input type="text" id="fullName" required />
+          </div>
+          <br />
+          <div class="input-field">
+            <label for="message">Votre message</label>
+            <textarea
+              class="materialize-textarea"
+              id="message"
+              required
+            ></textarea>
+          </div>
+          <br />
+          <button class="btn light" type="submit">Envoyer</button>
+        </form>
+        <br /><br />
+        <ul id="reviews"></ul>
+      </div>
     </main>
 
     <footer>
@@ -760,5 +787,12 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../../app.js"></script>
   </body>
 </html>

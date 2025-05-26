@@ -1342,6 +1342,42 @@ main .wrapper section .subtitle-body .parag-classic {
     font-size: 17px;
   }
 }
+main #feedback-container #reviewForm .input-field {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+main #feedback-container #reviewForm .input-field input {
+  width: 40%;
+}
+@media (max-width: 800px) {
+  main #feedback-container #reviewForm .input-field input {
+    width: 70%;
+  }
+}
+@media (max-width: 700px) {
+  main #feedback-container #reviewForm .input-field input {
+    width: 80%;
+  }
+}
+main #feedback-container #reviewForm .input-field textarea {
+  width: 60%;
+  min-height: 200px;
+  resize: none;
+}
+@media (max-width: 800px) {
+  main #feedback-container #reviewForm .input-field textarea {
+    width: 80%;
+  }
+}
+@media (max-width: 700px) {
+  main #feedback-container #reviewForm .input-field textarea {
+    width: 90%;
+  }
+}
+main #feedback-container #reviews ul li .comment-item {
+  margin-bottom: 30px;
+}
 
 main .wrapper {
   margin-top: 60px;

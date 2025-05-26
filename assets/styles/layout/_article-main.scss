@@ -155,4 +155,56 @@ main {
         }
     }
 
+    #feedback-container {
+
+        #reviewForm {
+            .input-field {
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+
+                input {
+                    width: 40%;
+
+                    @media(max-width: 800px) {
+                        width: 70%;
+
+                    }
+
+                    @media(max-width: 700px) {
+                        width: 80%;
+
+                    }
+                }
+
+                textarea {
+                    width: 60%;
+                    min-height: 200px;
+                    resize: none;
+
+                    @media(max-width: 800px) {
+                        width: 80%;
+
+                    }
+
+                    @media(max-width: 700px) {
+                        width: 90%;
+
+                    }
+                }
+            }
+        }
+
+        #reviews {
+            ul {
+                li {
+                    .comment-item {
+
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+
 }
