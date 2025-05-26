@@ -167,14 +167,10 @@ main {
                     width: 40%;
 
                     @media(max-width: 800px) {
-                        width: 70%;
+                        width: 100%;
 
                     }
 
-                    @media(max-width: 700px) {
-                        width: 80%;
-
-                    }
                 }
 
                 textarea {
@@ -183,12 +179,7 @@ main {
                     resize: none;
 
                     @media(max-width: 800px) {
-                        width: 80%;
-
-                    }
-
-                    @media(max-width: 700px) {
-                        width: 90%;
+                        width: 100%;
 
                     }
                 }

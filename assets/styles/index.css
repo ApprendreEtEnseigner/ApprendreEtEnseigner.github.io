@@ -1352,12 +1352,7 @@ main #feedback-container #reviewForm .input-field input {
 }
 @media (max-width: 800px) {
   main #feedback-container #reviewForm .input-field input {
-    width: 70%;
-  }
-}
-@media (max-width: 700px) {
-  main #feedback-container #reviewForm .input-field input {
-    width: 80%;
+    width: 100%;
   }
 }
 main #feedback-container #reviewForm .input-field textarea {
@@ -1367,12 +1362,7 @@ main #feedback-container #reviewForm .input-field textarea {
 }
 @media (max-width: 800px) {
   main #feedback-container #reviewForm .input-field textarea {
-    width: 80%;
-  }
-}
-@media (max-width: 700px) {
-  main #feedback-container #reviewForm .input-field textarea {
-    width: 90%;
+    width: 100%;
   }
 }
 main #feedback-container #reviews ul li .comment-item {
